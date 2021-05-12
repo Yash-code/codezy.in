@@ -1,0 +1,176 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript For Loop</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>Loops are handy, if you want to run the same code over and over again, each time with a
+                        different value.
+
+                        Often this is the case when working with arrays:
+                    </p>
+                    <br>
+                    <h4>Instead of writing:</h4>
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                text += cars[0] + &quot;&lt;br&gt;&quot;;<br/>text += cars[1] + &quot;&lt;br&gt;&quot;;<br/>text += cars[2] + &quot;&lt;br&gt;&quot;;<br/>text += cars[3] + &quot;&lt;br&gt;&quot;;<br/>text += cars[4] + &quot;&lt;br&gt;&quot;;<br/>text += cars[5] + &quot;&lt;br&gt;&quot;;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>You can write:</h4>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var i;<br/>for (i = 0; i &lt; cars.length; i++) &#123;<br/>  text += cars[i] + &quot;&lt;br&gt;&quot;;<br/>&#125;<br/>
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+
+                    <br>
+
+
+                    <h4>The For/In Loop</h4>
+                    <br>
+                    The JavaScript for/in statement loops through the properties of an object:
+                    <br>
+                    <br>
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var person = &#123;fname:&quot;John&quot;, lname:&quot;Doe&quot;, age:25&#125;;<br/><br/>var text = &quot;&quot;;<br/>var x;<br/>for (x in person) &#123;<br/>  text += person[x];<br/>&#125;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>The For/Of Loop</h4>
+                    <br>
+
+                    <p> MThe JavaScript for/of statement loops through the values of an iterable objects
+
+                        for/of lets you loop over data structures that are iterable such as Arrays, Strings,
+                        Maps, NodeLists, and more.
+
+                        The for/of loop has the following syntax:
+                    </p>
+                    <br>
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                vfor (variable of iterable) &#123;<br/>  // code block to be executed<br/>&#125;
+                                    <br/>
+                                </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+                    <h4>Looping over an Array</h4>
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                vfor (variable of iterable) &#123;<br/>  // code block to be executed<br/>&#125;
+                                    <br/>
+                         </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Looping over a String</h4>
+                    <br>
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var txt = 'JavaScript';<br/>var x;<br/><br/>for (x of txt) &#123;<br/>  document.write(x + &quot;&lt;br &gt;&quot;);<br/>&#125;
+                                    <br/>
+                         </code>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/jsboolean']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+        
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/jswhileloop']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

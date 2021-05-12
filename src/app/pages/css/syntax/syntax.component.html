@@ -1,0 +1,84 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Syntax</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    
+
+                    A CSS rule-set consists of a selector and a declaration block:<br/><br/>The selector points to the HTML element you want to style.<br/><br/>The declaration block contains one or more declarations separated by semicolons.<br/><br/>Each declaration includes a CSS property name and a value, separated by a colon.<br/><br/>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+                    <br>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                p &#123;<br/>  color: red;<br/>  text-align: center;<br/>&#125;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <ul>
+                        <li>p is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).</li>
+                        <li>color is a property, and red is the property value.</li>
+                        <li>text-align is a property, and center is the property value</li>
+                    </ul>
+                    
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/cssintroduction']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/howto']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

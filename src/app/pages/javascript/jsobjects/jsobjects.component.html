@@ -1,0 +1,197 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript Objects</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>You have already learned that JavaScript variables are containers for data values.
+
+                        This code assigns a simple value (Fiat) to a variable named car:
+                    </p>
+                    <br>
+
+
+
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var car = &quot;Fiat&quot;;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+
+
+
+                    bjects are variables too. But objects can contain many values.
+
+                    This code assigns many values (Fiat, 500, white) to a variable named car:
+                    <br>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var car = &#123;type:&quot;Fiat&quot;, model:&quot;500&quot;, color:&quot;white&quot;&#125;;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+
+                    <h4>Object Definition</h4>
+                    <br>
+                    <p>You define (and create) a JavaScript object with an object literal:</p>
+
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var person = &#123;firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;&#125;;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Object Properties</h4>
+                    <br>
+                    <p>The name:values pairs in JavaScript objects are called properties:</p>
+                    <br>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Property Value</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>firstName</td>
+                                <td>John</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>lastName</td>
+                                <td>Doe</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>age/td>
+                                <td>50</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>eyeColor</td>
+                                <td>blue</td>
+
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <br>
+                    <h4>Object Methods</h4>
+                    <p>Objects can also have methods.
+
+                        Methods are actions that can be performed on objects.
+
+                        Methods are stored in properties as function definitions.
+                    </p>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                            var person = &#123;<br/>  firstName: &quot;John&quot;,<br/>  lastName : &quot;Doe&quot;,<br/>  id       : 5566,<br/>  fullName : function() &#123;<br/>    return this.firstName + &quot; &quot; + this.lastName;<br/>  &#125;<br/>&#125;;
+
+                            <br/>
+                        </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>The this Keyword</h4>
+                    <br>
+                    <p>In a function definition, this refers to the "owner" of the function.
+
+                        In the example above, this is the person object that "owns" the fullName function.
+
+                        In other words, this.firstName means the firstName property of this object.
+
+                        Read more about the this keyword at JS this Keyword.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/jsfunctions']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+        
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/jsevents']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        
+        </div>
+    </section>
+
+
+
+    
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

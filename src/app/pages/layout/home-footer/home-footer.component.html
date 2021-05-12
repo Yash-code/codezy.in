@@ -1,0 +1,25 @@
+<footer class="main-footer">
+  <div class="row">
+    <div class="col-sm-6">
+      <strong>Copyright &copy; 2020 <a href="http://codewithknowledge.com">codewithknowledge.com</a>.</strong> All
+      rights reserved. While using this site, you agree to our <a [routerLink]="['/policy']" target="_blank"> privacy policy.</a>      
+    </div>
+    <div class="col-sm-4 p-2">
+      <form [formGroup]="emailForm">
+        <input type="email" class="form-control" formControlName="email"
+          placeholder="Enter your email to subscribe to our news feeds">
+        <div class="text-white p-2" *ngIf="!emailForm.get('email').valid && emailForm.get('email').dirty">
+          Please enter a valid email address.
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-2 p-2">
+      <button type="button" disabled (click)="saveEmail()"
+        class="nav-link btn btn-success btn-flat-outlined btn-sm text-white">Subscribe <i *ngIf="emailFormLoader"
+          class="fa fa-refresh fa-spin"></i></button>
+
+    </div>
+  </div>
+</footer>
+
+<!-- [disabled]="!emailForm.valid || emailFormLoader" -->

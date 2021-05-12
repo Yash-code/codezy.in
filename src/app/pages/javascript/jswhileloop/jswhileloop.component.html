@@ -1,0 +1,148 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript While Loop</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>Loops can execute a block of code as long as a specified condition is true.
+                    </p>
+                    <br>
+                    <h4>The While Loop</h4>
+                    <br>
+                    <p>The while loop loops through a block of code as long as a specified condition is true.
+                    </p>
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                while (i &lt; 10) &#123;<br/>  text += &quot;The number is &quot; + i;<br/>  i++;<br/>&#125;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>The Do/While Loop</h4>
+                    <br>
+                    <p>The do/while loop is a variant of the while loop. This loop will execute the code block
+                        once, before checking if the condition is true, then it will repeat the loop as long as
+                        the condition is true.
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                do &#123;<br/>  text += &quot;The number is &quot; + i;<br/>  i++;<br/>&#125;<br/>while (i &lt; 10);
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+
+                    <br>
+
+
+                    <h4>Comparing For and While</h4>
+                    <br>
+                    If you have read the previous chapter, about the for loop, you will discover that a while
+                    loop is much the same as a for loop, with statement 1 and statement 3 omitted.
+
+                    The loop in this example uses a for loop to collect the car names from the cars array:
+                    <br>
+                    <br>
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var cars = [&quot;BMW&quot;, &quot;Volvo&quot;, &quot;Saab&quot;, &quot;Ford&quot;];<br/>var i = 0;<br/>var text = &quot;&quot;;<br/><br/>for (;cars[i];) &#123;<br/>  text += cars[i] + &quot;&lt;br&gt;&quot;;<br/>  i++;<br/>&#125;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+
+                    <p> The loop in this example uses a while loop to collect the car names from the cars
+                        array:
+                    </p>
+                    <br>
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var cars = [&quot;BMW&quot;, &quot;Volvo&quot;, &quot;Saab&quot;, &quot;Ford&quot;];<br/>var i = 0;<br/>var text = &quot;&quot;;<br/><br/>while (cars[i]) &#123;<br/>  text += cars[i] + &quot;&lt;br&gt;&quot;;<br/>  i++;<br/>&#125;
+                                    <br/>
+                                </code>
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/jsforloop']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+        
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/jsbreakpoint']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

@@ -1,0 +1,247 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript Operators</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>Assign values to variables and add them together</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x = 5;         // assign the value 5 to x<br/>var y = 2;         // assign the value 2 to y<br/>var z = x + y;     // assign the value 7 to z (x + y)<br/>
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+
+
+                    <h4>JavaScript Arithmetic Operators</h4>
+                    <br>
+                    <div class="container">
+
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Description</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>+</td>
+                                    <td>Addition</td>
+
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>Subtraction</td>
+
+                                </tr>
+                                <tr>
+                                    <td>*</td>
+                                    <td>Multiplication</td>
+
+                                </tr>
+                                <tr>
+                                    <td>**</td>
+                                    <td>Exponentiation (ES2016)</td>
+
+                                </tr>
+                                <tr>
+                                    <td>%</td>
+                                    <td>Modulus (Remainder)</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>++</td>
+                                    <td>Increment</td>
+
+                                </tr>
+                                <tr>
+                                    <td>--</td>
+                                    <td>Decrement</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <h4>Operators and Operands</h4>
+                    <br>
+                    <p>The numbers (in an arithmetic operation) are called operands.
+
+                        The operation (to be performed between the two operands) is defined by an operator.
+                    </p>
+                    <br>
+                    <div class="container">
+
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Operand</th>
+                                    <th>Operator</th>
+                                    <th>Operand</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>100</td>
+                                    <td>+</td>
+                                    <td>50</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <h4>Multiplying</h4>
+                    <br>
+                    <p>The multiplication operator (*) multiplies numbers.</p>
+
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x = 5;<br/>var y = 2;<br/>var z = x * y;<br/>
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+
+                    <h4>Remainder</h4>
+                    <br>
+                    <p>The modulus operator (%) returns the division remainder</p>
+
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x = 5;<br/>var y = 2;<br/>var z = x % y;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <h4>Incrementing</h4>
+                    <br>
+                    <p>The increment operator (++) increments numbers.</p>
+
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x = 5;<br/>x++;<br/>var z = x;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Decrementing</h4>
+                    <br>
+                    <p>The decrement operator (--) decrements numbers.</p>
+
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x = 5;<br/>x--;<br/>var z = x;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Exponentiation</h4>
+                    <br>
+                    <p>The exponentiation operator (**) raises the first operand to the power of the second operand.</p>
+
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x = 5;<br/>var z = x ** 2;          // result is 25
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/jsvariables']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+        
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/jsfunctions']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

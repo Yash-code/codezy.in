@@ -1,0 +1,132 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Table</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    The look of an HTML table can be greatly improved with CSS.
+                    <br>
+                    <br>
+
+                    <ul>
+                        <li><b>Table Borders</b> - To specify table borders in CSS, use the border property.</li>
+                        <li><b>Collapse Table Borders</b> - The border-collapse property sets whether the table borders should be collapsed into a single border.</li>
+                        <li><b>Table Width and Height</b> - Width and height of a table are defined by the width and height properties.</li>
+                        <li><b>Horizontal Alignment</b> - The text-align property sets the horizontal alignment (like left, right, or center) of the content in &lt;th&gt; or &lt;td&gt;.
+                            <br>By default, the content of &lt;th&gt; elements are center-aligned and the content of &lt;td&gt; elements are left-aligned.</li>
+                        <li><b>Vertical Alignment</b> - The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in &lt;th&gt; or &lt;td&gt;.<br/>By default, the vertical alignment of the content in a table is middle (for both &lt;th&gt; and &lt;td&gt; elements).</li>
+                        <li><b>Table Padding</b> - To control the space between the border and the content in a table, use the padding property on &lt;td&gt; and &lt;th&gt; elements</li>
+                        <li><b>Horizontal Dividers</b> - Add the border-bottom property to &lt;th&gt; and &lt;td&gt; for horizontal dividers</li>
+                        <li><b>Hoverable Table</b> - Use the :hover selector on &lt;tr&gt; to highlight table rows on mouse over</li>
+                        <li><b>Striped Tables</b> - For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows</li>
+                        <li><b>Table Color</b> - The example below specifies the background color and text color of &lt;th&gt; elements.</li>
+                    </ul>
+                    
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                <table>
+                                    <tr>
+                                      <th>Firstname</th>
+                                      <th>Lastname</th>
+                                      <th>Savings</th>
+                                    </tr>
+                                    <tr>
+                                      <td>Peter</td>
+                                      <td>Griffin</td>
+                                      <td>$100</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Lois</td>
+                                      <td>Griffin</td>
+                                      <td>$150</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Joe</td>
+                                      <td>Swanson</td>
+                                      <td>$300</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Cleveland</td>
+                                      <td>Brown</td>
+                                      <td>$250</td>
+                                  </tr>
+                                  </table>
+                            </code>
+
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/csslink']" type="button" class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/position']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+
+
+   
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even){background-color: #f2f2f2}
+    
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    </style>
+<app-home-footer></app-home-footer>

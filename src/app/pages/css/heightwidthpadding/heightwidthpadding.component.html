@@ -1,0 +1,164 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Height, Width & Padding</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>The CSS padding properties are used to generate space around an element's content, inside
+                        of any defined borders.
+
+                        With CSS, you have full control over the padding. There are properties for setting the
+                        padding for each side of an element (top, right, bottom, and left).
+
+                    </p>
+
+
+
+                    <br>
+
+
+                    <h4>Padding - Individual Sides</h4>
+                    <br>
+                    CSS has properties for specifying the padding for each side of an element:
+                    <br>
+                    <br>
+                    <ul>
+                        <li>padding-top</li>
+                        <li>padding-right</li>
+                        <li>padding-bottom</li>
+                        <li>padding-left</li>
+                    </ul>
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                div &#123;<br/>  padding-top: 50px;<br/>  padding-right: 30px;<br/>  padding-bottom: 50px;<br/>  padding-left: 80px;<br/>&#125;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Padding - Shorthand Property</h4>
+                    <br>
+                    <p>To shorten the code, it is possible to specify all the padding properties in one
+                        property.
+
+
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                div &#123;<br/>  padding: 25px 50px 75px 100px;<br/>&#125;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>CSS Height and Width</h4>
+                    <br>
+                    The height and width properties are used to set the height and width of an element.
+
+                    The height and width properties do not include padding, borders, or margins. It sets the
+                    height/width of the area inside the padding, border, and margin of the element.
+                    <br>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                div &#123;<br/>  height: 200px;<br/>  width: 50%;<br/>  background-color: powderblue;<br/>&#125;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Setting max-width</h4>
+                    <br>
+                    <p>The max-width property is used to set the maximum width of an element.
+
+                        The max-width can be specified in length values, like px, cm, etc., or in percent (%) of
+                        the containing block, or set to none (this is default. Means that there is no maximum
+                        width).
+
+                        The problem with the
+                        &lt;div&gt; above occurs when the browser window is smaller than the width of the
+                        element
+                        (500px).
+                        The browser then adds a horizontal scrollbar to the page.
+
+                        Using max-width instead, in this situation, will improve the browser's handling of small
+                        windows.
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                div &#123;<br/>  max-width: 500px;<br/>  height: 100px;<br/>  background-color: powderblue;<br/>&#125;<br/><br/>
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 text-left">
+                            <a [routerLink]="['/margins']" type="button"
+                                class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                        </div>
+                        <div class="col-4">
+                
+                        </div>
+                        <div class="col-3 text-right">
+                            <a [routerLink]="['/boxmodel']" type="button"
+                                class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                        </div>
+                
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </section>
+   
+   
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

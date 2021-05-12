@@ -1,0 +1,169 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Float, Inline-Block</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    The CSS float property specifies how an element should float.
+                    <br>
+                    The CSS clear property specifies what elements can float beside the cleared element and on which side.
+                    <br><br>
+                    <h4>The float Property</h4>
+                    The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+                    <br>
+                    The float property can have one of the following values:
+                   <ul>
+                       <li>left - The element floats to the left of its container</li>
+                       <li>right - The element floats to the right of its container</li>
+                       <li>none - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+                       <li>inherit - The element inherits the float value of its parent</li>
+                   </ul>
+
+                   In its simplest use, the float property can be used to wrap text around images.
+
+                   <h4>Float</h4>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                <p><img src="assets/dist/img/pineapple.jpg" alt="pineapple" class="img-right" style="height:170px;margin-left:15px;">
+                                    <br><br><br><br>
+                                    This example specifies that an image should float to the right in a text:
+                                    <br><br><br><br>
+                                </p>
+                            </code>
+
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                <p>
+                                    <img src="assets/dist/img/pineapple.jpg" alt="pineapple" class="img-left" style="height:170px;margin-left:15px;">
+                                    <br><br><br><br>
+                                    This example specifies that an image should float to the right in a text:
+                                    <br><br><br><br>
+                                    </p>
+                            </code>
+
+                        </div>
+                    </div>
+                    <h4>The clear Property</h4>
+                    <br>
+                    The clear property specifies what elements can float beside the cleared element and on which side.
+                    <br>
+                    The clear property can have one of the following values:
+                    <ul>
+                        <li>none - Allows floating elements on both sides. This is default</li>
+                        <li>left - No floating elements allowed on the left side</li>
+                        <li>right- No floating elements allowed on the right side</li>
+                        <li>both - No floating elements allowed on either the left or the right side</li>
+                        <li>inherit - The element inherits the clear value of its parent</li>
+                    </ul>
+                    The most common way to use the clear property is after you have used a float property on an element.<br/><br/>When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.<br/><br/>
+                    <br>
+                    <h4>The clearfix Hack</h4>
+                    If an element is taller than the element containing it, and it is floated, it will "overflow" outside of its container:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                .clearfix &#123;<br/>  overflow: auto;<br/>&#125;
+                            </code>
+
+                        </div>
+                    </div>
+                    <h4>The display: inline-block Value</h4>
+                    <br>
+                    <ul>
+                        <li>Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.</li>
+                        <li>Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.</li>
+                        <li>Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.</li>
+                        
+                    </ul>
+                    <br>
+                    The following example shows the different behavior of display: inline, display: inline-block and display: block:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                span.a &#123;<br/>  display: inline; /* the default for span */<br/>  width: 100px;<br/>  height: 100px;<br/>  padding: 5px;<br/>  border: 1px solid blue;<br/>  background-color: yellow;<br/>&#125;<br/><br/>span.b &#123;<br/>  display: inline-block;<br/>  width: 100px;<br/>  height: 100px;<br/>  padding: 5px;<br/>  border: 1px solid blue;<br/>  background-color: yellow;<br/>&#125;<br/><br/>span.c &#123;<br/>  display: block;<br/>  width: 100px;<br/>  height: 100px;<br/>  padding: 5px;<br/>  border: 1px solid blue;<br/>  background-color: yellow;<br/>&#125;
+                            </code>
+                        </div>
+                    </div>
+                    
+                    <h4>Using inline-block to Create Navigation Links</h4>
+                    <br>
+                    One common use for display: inline-block is to display list items horizontally instead of vertically. The following example creates horizontal navigation links:
+                    
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                .nav &#123;<br/>  background-color: yellow;<br/>  list-style-type: none;<br/>  text-align: center; <br/>  padding: 0;<br/>  margin: 0;<br/>&#125;<br/><br/>.nav li &#123;<br/>  display: inline-block;<br/>  font-size: 20px;<br/>  padding: 20px;<br/>&#125;
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/overflow']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/align']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        
+        </div>
+    </section>
+   
+   
+
+
+
+    
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<style>
+    .img-right {
+      float: right;
+    }
+    .img-left {
+      float: left;
+    }
+    </style>
+<app-home-footer></app-home-footer>

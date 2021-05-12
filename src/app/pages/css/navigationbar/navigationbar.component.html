@@ -1,0 +1,327 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Navigation Bar</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <h4>Navigation Bars</h4>
+                    Having easy-to-use navigation is important for any web site.
+                    <br>
+                    With CSS you can transform boring HTML menus into good-looking navigation bars.
+                    <br>
+                    <br>
+                    <h4>Navigation Bar = List of Links</h4>
+                    A navigation bar needs standard HTML as a base.
+                    <br>
+                    In our examples we will build the navigation bar from a standard HTML list.
+                    <br>
+                    A navigation bar is basically a list of links, so using the &lt;ul&gt; and &lt;li&gt; elements makes
+                    perfect sense:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;ul&gt;<br/>  &lt;li&gt;&lt;a href=&quot;default.asp&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href=&quot;news.asp&quot;&gt;News&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href=&quot;contact.asp&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br/>  &lt;li&gt;&lt;a href=&quot;about.asp&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;
+                            </code>
+                        </div>
+                    </div>
+                    Remove the bullets and the margins and padding from the list:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                ul &#123;
+                                    list-style-type: none;
+                                    margin: 0;
+                                    padding: 0;
+                                    &#125;
+                            </code>
+                        </div>
+                    </div>
+
+                    <h4>Example Explained</h4>
+
+                    List-style-type: none; - Removes the bullets. A navigation bar does not need list markers
+                    <br>
+                    Set margin: 0; and padding: 0; to remove browser default settings
+                    <br>
+                    <br>
+                    <h4>Vertical Navigation Bar</h4>
+
+                    To build a vertical navigation bar, you can style the &lt;a&gt; elements inside the list, in
+                    addition to the code from the previous page:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                li a  &#123;
+                                display: block;
+                                width: 60px;
+                                    &#125;
+                            </code>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>display: block; - Displaying the links as block elements makes the whole link area clickable
+                            (not just the text), and it allows us to specify the width (and padding, margin, height,
+                            etc. if you want)</li>
+                        <li>width: 60px; - Block elements take up the full width available by default. We want to
+                            specify a 60 pixels width</li>
+                    </ul>
+                    <br>
+                    You can also set the width of &#123;ul&#125;, and remove the width of &#123;a&#125;, as they will
+                    take up the full width available when displayed as block elements. This will produce the same result
+                    as our previous example:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                    ul &#123;
+                                        list-style-type: none;
+                                        margin: 0;
+                                        padding: 0;
+                                        width: 60px;
+                                      &#125;
+                                      
+                                      li a &#123;
+                                        display: block;
+                                      &#125;
+                                </code>
+                        </div>
+                    </div>
+
+                    <h4>Vertical Navigation Bar Examples</h4>
+
+                    Create a basic vertical navigation bar with a gray background color and change the background color
+                    of the links when the user moves the mouse over them:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                ul &#123;<br/>  list-style-type: none;<br/>  margin: 0;<br/>  padding: 0;<br/>  width: 200px;<br/>  background-color: #f1f1f1;<br/>&#125;<br/><br/>li a &#123;<br/>  display: block;<br/>  color: #000;<br/>  padding: 8px 16px;<br/>  text-decoration: none;<br/>&#125;<br/><br/>/* Change the link color on hover */<br/>li a:hover &#123;<br/>  background-color: #555;<br/>  color: white;<br/>&#125;
+                            </code>
+                        </div>
+                    </div>
+
+                    <h4>Active/Current Navigation Link</h4>
+                    Add an "active" class to the current link to let the user know which page he/she is on:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                .active &#123;<br/>  background-color: #4CAF50;<br/>  color: white;<br/>&#125;
+                            </code>
+                        </div>
+                    </div>
+
+                    <h4>Full-height Fixed Vertical Navbar</h4>
+                    Create a full-height, "sticky" side navigation:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                ul &#123;<br/>  list-style-type: none;<br/>  margin: 0;<br/>  padding: 0;<br/>  width: 25%;<br/>  background-color: #f1f1f1;<br/>  height: 100%; /* Full height */<br/>  position: fixed; /* Make it stick, even on scroll */<br/>  overflow: auto; /* Enable scrolling if the sidenav has too much content */<br>&#125;
+                            </code>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                            <h4>Vertical Navbar</h4>
+                            <ul class="ul">
+                                <li class="li"><a class="active" href="#home">Home</a></li>
+                                <li class="li"><a href="#news">News</a></li>
+                                <li class="li"><a href="#contact">Contact</a></li>
+                                <li class="li"><a href="#about">About</a></li>
+                            </ul>
+                            <br>
+                        </code>
+                        </div>
+                    </div>
+
+                    <h4>Horizontal Navigation Bar</h4>
+                    There are two ways to create a horizontal navigation bar. Using inline or floating list items.
+                    <br><br>
+                    <h4>Inline List Items</h4>
+                    One way to build a horizontal navigation bar is to specify the &lt;li&gt; elements as inline, in
+                    addition to the "standard" code from the previous page:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                            li &#123;
+                                display: inline;
+                              &#125;
+                            </code>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            display: inline; - By default, &lt;li&gt; elements are block elements. Here, we remove the
+                            line breaks before and after each list item, to display them on one line.
+                        </li>
+                    </ul>
+                    <h4>Floating List Items</h4>
+                    <ul>
+                        <li>float: left; - use float to get block elements to slide next to each other</li>
+                        <li>display: block; - Displaying the links as block elements makes the whole link area clickable
+                            (not just the text), and it allows us to specify padding (and height, width, margins, etc.
+                            if you want)</li>
+                        <li>padding: 8px; - Since block elements take up the full width available, they cannot float
+                            next to each other. Therefore, specify some padding to make them look good</li>
+                        <li>background-color: #dddddd; - Add a gray background-color to each a element</li>
+                    </ul>
+                    <h4>Active/Current Navigation Link & Border Dividers</h4>
+                    <ul>
+                        <li>Add an "active" class to the current link to let the user know which page he/she is on.</li>
+                        <li>Add the border-right property to
+                        <li> to create link dividers:</li>
+                    </ul>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                .active &#123;
+                                    background-color: #4CAF50;
+                                  &#125;
+                            </code>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                li &#123;
+                                    border-right: 1px solid #bbb;
+                                  &#125;
+                                  <br>
+                                  li:last-child &#123;
+                                    border-right: none;
+                                  &#125;
+                            </code>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            Output Example
+                            <br>
+                            <code>
+                                <ul class="ul-list">
+                                    <li class="li-list"><a class="li-listactive" href="#home">Home</a></li>
+                                    <li class="li-list"><a href="#news">News</a></li>
+                                    <li class="li-list"><a href="#contact">Contact</a></li>
+                                    <li class="li-list" style="float:right"><a href="#about">About</a></li>
+                                  </ul>
+                                  <br>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/align']" type="button" class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/dropdowns']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<style>
+    .ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+    }
+
+    .li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .li a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+    .ul-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+    }
+
+.li-list {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+.li-list:last-child {
+  border-right: none;
+}
+
+.li-list a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li-list a:hover:not(.active) {
+  background-color: #111;
+}
+
+.li-listactive {
+  background-color: #4CAF50;
+}
+</style>
+<app-home-footer></app-home-footer>

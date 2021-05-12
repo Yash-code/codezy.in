@@ -1,0 +1,195 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Border</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>
+                        The CSS border properties allow you to specify the style, width, and color of an
+                        element's border.
+                        <br>
+                    </p>
+
+
+
+                    <br>
+
+
+                    <h4>CSS Border Style</h4>
+                    <br>
+                    The border-style property specifies what kind of border to display.
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                p.dotted &#123;border-style: dotted;&#125;<br/>p.dashed &#123;border-style: dashed;&#125;<br/>p.solid &#123;border-style: solid;&#125;<br/>p.double &#123;border-style: double;&#123;<br/>p.groove &#123;border-style: groove;&#125;<br/>p.ridge &#123;border-style: ridge;&#125;<br/>p.inset &#123;border-style: inset;&#125;<br/>p.outset &#123;border-style: outset;&#125;<br/>p.none &#123;border-style: none;&#125;<br/>p.hidden &#123;border-style: hidden;&#125;<br/>p.mix &#123;border-style: dotted dashed solid double;&#125;<br/>&#125;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>CSS Border Width</h4>
+                    <br>
+                    <p>The border-width property specifies the width of the four borders.
+
+                        The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the
+                        three pre-defined values: thin, medium, or thick:</p>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                p.one &#123;<br/>  border-style: solid;<br/>  border-width: 5px;<br/>&#125;<br/><br/>p.two &#123;<br/>  border-style: solid;<br/>  border-width: medium;<br/>&#125;<br/><br/>p.three &#123;<br/>  border-style: dotted;<br/>  border-width: 2px;<br/>&#125;<br/><br/>p.four &#123;<br/>  border-style: dotted;<br/>  border-width: thick;<br/>&#125;
+
+                                    <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Specific Side Widths</h4>
+                    <br>
+                    <p>The border-width property can have from one to four values (for the top border, right
+                        border, bottom border, and the left border):
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                p.one &#123;<br/>  border-style: solid;<br/>  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */<br/>&#125;<br/><br/>p.two &#123;<br/>  border-style: solid;<br/>  border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */<br/>&#125;<br/><br/>p.three &#123;<br/>  border-style: solid;<br/>  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */<br/>&#125;
+                                    <br/>
+                                </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>CSS Border Color</h4>
+                    <br>
+                    <p>The border-color property is used to set the color of the borders.</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                p.one &#123;<br/>  border-style: solid;<br/>  border-color: red;<br/>&#125;<br/><br/>p.two &#123;<br/>  border-style: solid;<br/>  border-color: green;<br/>&#125;<br/><br/>p.three &#123;<br/>  border-style: dotted;<br/>  border-color: blue;<br/>&#125;
+                                    <br/>
+                                </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>CSS Border - Individual Sides</h4>
+                    <br>
+                    <p>From the examples on the previous pages, you have seen that it is possible to specify a
+                        different border for each side.
+
+                        In CSS, there are also properties for specifying each of the borders (top, right,
+                        bottom, and left):
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                p &#123;<br/>  border-top-style: dotted;<br/>  border-right-style: solid;<br/>  border-bottom-style: dotted;<br/>  border-left-style: solid;<br/>&#125;
+                                    <br/>
+                                </code>
+
+                        </div>
+                    </div>
+                    <h4>CSS Border - Shorthand Property</h4>
+                    <br>
+                    <p>Like you saw in the previous page, there are many properties to consider when dealing
+                        with borders.
+
+                        To shorten the code, it is also possible to specify all the individual border properties
+                        in one property.
+
+                        The border property is a shorthand property for the following individual border
+                        properties:
+                    </p>
+                    <br>
+                    <ul>
+                        <li>border-width</li>
+                        <li>border-style (required)</li>
+                        <li>border-color</li>
+                    </ul>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                p &#123;<br/>  border: 5px solid red;<br/>&#125;
+                                    <br/>
+                                </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>CSS Rounded Borders</h4>
+                    <br>
+                    <p>The border-radius property is used to add rounded borders to an element:</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                p &#123;<br/>  border: 2px solid red;<br/>  border-radius: 5px;<br/>&#125;
+                                    <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/backgrounds']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/margins']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+   
+   
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

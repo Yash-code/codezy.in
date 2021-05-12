@@ -1,0 +1,233 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript Strings</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>JavaScript strings are used for storing and manipulating text.</p>
+                    <br>
+
+
+                    <p>A JavaScript string is zero or more characters written inside quotes.</p>
+                    <br>
+
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x = &quot;John Doe&quot;;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+
+
+                    You can use quotes inside a string, as long as they don't match the quotes surrounding the
+                    string:
+                    <br>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var answer1 = &quot;It's alright&quot;;<br/>var answer2 = &quot;He is called 'Johnny'&quot;;<br/>var answer3 = 'He is called &quot;Johnny&quot;';
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+
+                    <h4>String Length</h4>
+                    <br>
+                    <p>To find the length of a string, use the built-in length property:
+                    </p>
+
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var txt = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;<br/>var sln = txt.length;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Breaking Long Code Lines</h4>
+                    <p>For best readability, programmers often like to avoid code lines longer than 80
+                        characters.
+
+                        If a JavaScript statement does not fit on one line, the best place to break it is after
+                        an operator:
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                document.getElementById(&quot;demo&quot;).innerHTML =<br/>&quot;Hello Dolly!&quot;;
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <h4>Strings Can be Objects</h4>
+                    <br>
+                    <p>Normally, JavaScript strings are primitive values, created from literals:
+
+                        var firstName = "John";
+
+                        But strings can also be defined as objects with the keyword new:
+
+                        var firstName = new String("John");
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x = &quot;John&quot;;<br/>var y = new String(&quot;John&quot;);<br/><br/>// typeof x will return string<br/>// typeof y will return object
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>String Methods and Properties</h4>
+                    <br>
+                    <p>Primitive values, like "John Doe", cannot have properties or methods (because they are
+                        not objects).
+
+                        But with JavaScript, methods and properties are also available to primitive values,
+                        because JavaScript treats primitive values as objects when executing methods and
+                        properties.
+
+                    </p>
+                    <br>
+                    <h4>Finding a String in a String</h4>
+                    <br>
+                    <p>The indexOf() method returns the index of (the position of) the first occurrence of a
+                        specified text in a string:</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var str = &quot;Please locate where 'locate' occurs!&quot;;<br/>var pos = str.indexOf(&quot;locate&quot;);
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Searching for a String in a String</h4>
+                    <br>
+                    <p>The search() method searches a string for a specified value and returns the position
+                        of the match:
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var str = &quot;Please locate where 'locate' occurs!&quot;;<br/>var pos = str.search(&quot;locate&quot;);
+                                    <br/>
+                                </code>
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Replacing String Content</h4>
+                    <br>
+                    <p>The replace() method replaces a specified value with another value in a string:</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                str = &quot;Please visit Microsoft!&quot;;<br/>var n = str.replace(&quot;Microsoft&quot;, &quot;college&quot;);
+                                    <br/>
+                                </code>
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Converting a String to an Array</h4>
+                    <br>
+                    <p>A string can be converted to an array with the split() method:</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var txt = &quot;a,b,c,d,e&quot;;   // String<br/>txt.split(&quot;,&quot;);          // Split on commas<br/>txt.split(&quot; &quot;);          // Split on spaces<br/>txt.split(&quot;|&quot;);          // Split on pipe
+                                    <br/>
+                                </code>
+
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/jsevents']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+        
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/jsarrays']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        
+        </div>
+    </section>
+
+
+
+   
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

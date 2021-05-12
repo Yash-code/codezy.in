@@ -1,0 +1,278 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript Arrays</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>JavaScript arrays are used to store multiple values in a single variable.</p>
+                    <br>
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+
+
+                    <h4>What is an Array?</h4>
+                    <br>
+                    An array is a special variable, which can hold more than one value at a time.
+
+                    If you have a list of items (a list of car names, for example), storing the cars in single
+                    variables could look like this:
+                    <br>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                vvar car1 = &quot;Saab&quot;;<br/>var car2 = &quot;Volvo&quot;;<br/>var car3 = &quot;BMW&quot;;
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <p>However, what if you want to loop through the cars and find a specific one? And what if
+                        you had not 3 cars, but 300?
+
+                        The solution is an array!
+
+                        An array can hold many values under a single name, and you can access the values by
+                        referring to an index number.
+                    </p>
+
+                    <br>
+                    <h4>Access the Full Array</h4>
+                    <br>
+                    <p>With JavaScript, the full array can be accessed by referring to the array name:</p>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];<br/>document.getElementById(&quot;demo&quot;).innerHTML = cars;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Array Elements Can Be Objects</h4>
+                    <br>
+
+                    <p> JavaScript variables can be objects. Arrays are special kinds of objects.
+
+                        Because of this, you can have variables of different types in the same Array.
+
+                        You can have objects in an Array. You can have functions in an Array. You can have
+                        arrays in an Array:
+                    </p>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                myArray[0] = Date.now;<br/>myArray[1] = myFunction;<br/>myArray[2] = myCars;
+
+                                    <br/>
+                                </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+                    <h4>JavaScript Array Methods</h4>
+                    <br>
+                    <h4>Converting Arrays to Strings</h4>
+                    <br>
+                    <p>The JavaScript method toString() converts an array to a string of (comma separated) array
+                        values.
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br/>document.getElementById(&quot;demo&quot;).innerHTML = fruits.toString();
+                                    <br/>
+                         </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Popping and Pushing</h4>
+                    <br>
+
+
+
+
+                    <p>When you work with arrays, it is easy to remove elements and add new elements.
+
+                        This is what popping and pushing is:
+
+                        Popping items out of an array, or pushing items into an array.
+                    </p>
+                    <br>
+                    <h4>Popping</h4>
+                    <br>
+                    <p>The pop() method removes the last element from an array:</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br/>fruits.pop();              // Removes the last element (&quot;Mango&quot;) from fruits
+                                    <br/>
+                         </code>
+
+                        </div>
+                    </div>
+
+                    <br>
+                    <h4>Pushing</h4>
+                    <br>
+                    <p>The push() method adds a new element to an array (at the end):</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br/>fruits.push(&quot;Kiwi&quot;);       //  Adds a new element (&quot;Kiwi&quot;) to frui
+                                    <br/>
+                         </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Changing Elements</h4>
+                    <br>
+                    <p>Array elements are accessed using their index number:</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br/>fruits[0] = &quot;Kiwi&quot;;        // Changes the first element of fruits to &quot;Kiwi&quot;
+                                    <br/>
+                         </code>
+
+                        </div>
+                    </div>
+                    <h4>Slicing an Array</h4>
+                    <br>
+                    <p>The slice() method slices out a piece of an array into a new array.
+
+                        This example slices out a part of an array starting from array element 1 ("Orange"):ar fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br/>var citrus = fruits.slice(1);
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                ar fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br/>var citrus = fruits.slice(1);
+                                    <br/>
+                         </code>
+
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/jsstrings']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+        
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/jsdats']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+    
+
+
+   
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

@@ -1,0 +1,176 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript Statements</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x, y, z;    // Statement 1<br/>x = 5;          // Statement 2<br/>y = 6;          // Statement 3<br/>z = x + y;      // Statement 4
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+
+
+                    <h4>JavaScript Programs</h4>
+                    <br>
+                    A computer program is a list of "instructions" to be "executed" by a computer.
+
+                    In a programming language, these programming instructions are called statements.
+
+                    A JavaScript program is a list of programming statements.
+                    <br>
+                    <br>
+
+                    <h4>JavaScript Statements</h4>
+                    <br>
+                    <p>JavaScript statements are composed of:
+
+                        Values, Operators, Expressions, Keywords, and Comments.
+
+                        This statement tells the browser to write "Hello Dolly." inside an HTML element with
+                        id="demo":
+                    </p>
+
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello Dolly.&quot;;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+                    <p> Most JavaScript programs contain many JavaScript statements.
+
+                        The statements are executed, one by one, in the same order as they are written.
+                    </p>
+                    <br>
+                    <h4>Semicolons ;</h4>
+                    <br>
+                    <p>Semicolons separate JavaScript statements.
+
+                        Add a semicolon at the end of each executable statement:
+                    </p>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var a, b, c;     // Declare 3 variables<br/>a = 5;           // Assign the value 5 to a<br/>b = 6;           // Assign the value 6 to b<br/>c = a + b;       // Assign the sum of a and b to c<br/>
+
+                                    <br/>
+                                </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+                    <h4>JavaScript White Space</h4>
+                    <br>
+                    <p>JavaScript ignores multiple spaces. You can add white space to your script to make it
+                        more readable.
+
+                        The following lines are equivalent:
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var person = &quot;Hege&quot;;<br/>var person=&quot;Hege&quot;;
+                                    <br/>
+                         </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>JavaScript Code Blocks</h4>
+                    <br>
+
+
+
+                    <p>JavaScript statements can be grouped together in code blocks, inside curly brackets
+                        &#123;...&#125;.
+
+                        The purpose of code blocks is to define statements to be executed together.
+
+                        One place you will find statements grouped together in blocks, is in JavaScript
+                        functions:
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                function myFunction() &#123;<br/>  document.getElementById(&quot;demo1&quot;).innerHTML = &quot;Hello Dolly!&quot;;<br/>  document.getElementById(&quot;demo2&quot;).innerHTML = &quot;How are you?&quot;;<br/>&#125;
+                                    <br/>
+                         </code>
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/comment']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+        
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/jsvariables']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

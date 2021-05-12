@@ -1,0 +1,240 @@
+<app-home-header></app-home-header>
+<app-html-sidenav></app-html-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HTML Attributes</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    HTML attributes provide additional information about HTML elements. <br><br>
+
+                    <h4>HTML Attributes</h4>
+                    <p>
+                        <ul>
+                        <li>All HTML elements can have attributes</li>
+
+                        <li>Attributes provide additional information about elements</li>
+
+                        <li>Attributes are always specified in the start tag</li>
+
+                        <li>Attributes usually come in name/value pairs like: name="value"</li>
+
+                        </ul>
+
+                        <h4>The href Attribute</h4>
+
+                        The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the
+                        link goes to:
+                        <br>
+
+
+                        <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;a href="www.youtube.com"&gt; Visit this link &lt;/a&gt;<br>
+             
+                            </code>
+                        </div>
+
+                        </div>
+
+                        <h4>The src Attribute</h4>
+                        The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies
+                        the path to the image to be displayed:
+
+                        <br>
+
+
+                        <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;img src="image.jpg"&gt; <br>
+             
+                            </code>
+                        </div>
+
+                        </div>
+
+                             <h4>The width and height Attributes</h4>
+                                The &lt;img&gt; tag should also contain the width and height attributes, which specifies the
+                                width and height of the image (in pixels):
+                                <div class="card-body">
+
+                                     <div class="callout callout-success rounded-0">
+                                     <code>
+                                        &lt;img src="img_girl.jpg" width="500" height="600"&gt;
+        
+                                    </code>
+                                </div>
+
+                        </div>
+                        <h4>The alt Attribute</h4>
+                        The required alt attribute for the &lt;img&gt; tag specifies an alternate text for an image,
+                        if the image for some reason cannot be displayed. This can be due to slow connection, or an
+                        error in the src attribute, or if the user uses a screen reader.
+                        <div class="card-body">
+
+                            <div class="callout callout-success rounded-0">
+                                <code>
+
+                                 &lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;
+                                </code>
+                            </div>
+
+                        </div>
+
+
+                            See what happens if we try to display an image that does not exist:
+                            <div class="card-body">
+
+                            <div class="callout callout-success rounded-0">
+                                <code>
+
+                                &lt;img src="img_typo.jpg" alt="Girl with a jacket"&gt;
+                                </code>
+                            </div>
+
+                        </div>
+
+
+                        <h4>The style Attribute</h4>
+                        The style attribute is used to add styles to an element, such as color, font, size, and
+                        more.
+                    <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+
+                            &lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;
+                           </code>
+                        </div>
+
+                    </div>
+
+                    <h4>The lang Attribute</h4>
+                    You should always include the lang attribute inside the &lt;html&gt; tag, to declare the
+                    language of the Web page. This is meant to assist search engines and browsers.
+                    The following example specifies English as the language:
+                    <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                            &lt;body&gt;
+                            ...
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                            </code>
+                        </div>
+
+                    </div>
+
+                    Country codes can also be added to the language code in the lang attribute. So, the first
+                    two characters define the language of the HTML page, and the last two characters define the
+                    country.
+                    The following example specifies English as the language and United States as the country:
+                    <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en-US"&gt;
+                            &lt;body&gt;
+                            ...
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                            </code>
+                        </div>
+
+                    </div>
+
+                    <h4>The title Attribute</h4>
+                    The title attribute defines some extra information about an element.
+                    The value of the title attribute will be displayed as a tooltip when you mouse over the
+                    element:
+                    <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+
+                                &lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;
+                            </code>
+                        </div>
+
+                    </div>
+
+                    <h4>Example Explained</h4>
+                    <ul>
+                        <li>All HTML elements can have attributes</li>
+
+                        <li>The href attribute of &lt;a&gt; specifies the URL of the page the link goes to</li>
+                        <li>The src attribute of &lt;img&gt; specifies the path to the image to be displayed
+                        </li>
+                        <li>The width and height attributes of &lt;img&gt; provide size information for images
+                        </li>
+                        <li>The alt attribute of &lt;img&gt; provides an alternate text for an image</li>
+                        <li>The style attribute is used to add styles to an element, such as color, font, size,
+                            and more</li>
+                        <li>The lang attribute of the &lt;html&gt; tag declares the language of the Web page
+                        </li>
+                        <li>The title attribute defines some extra information about an element</li>
+                    </ul>
+
+                    <!-- /.card -->
+                    <!-- /.card -->
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/html-element']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/html-headings']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+
+            </div>
+            <br />
+
+
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+
+
+
+<!-- /.content -->
+
+</div>
+<app-home-footer></app-home-footer>

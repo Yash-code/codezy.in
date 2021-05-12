@@ -1,0 +1,131 @@
+<app-home-header></app-home-header>
+<app-html-sidenav></app-html-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HTML Lists</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>HTML lists allow web developers to group a set of related items in lists.</p>
+                    <br>
+
+                    An Unordered HTML List
+
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul>
+
+                    An Ordered HTML List
+
+                    <ol>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+
+
+                    <br>
+
+
+                    <h4>Unordered HTML List</h4>
+                    <br>
+                    An unordered list starts with the&lt;ul&gt; tag. Each list item starts with the
+                    &lt;li&gt;tag.
+
+                    The list items will be marked with bullets (small black circles) by default:
+                    <br>
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;ul&gt;<br/>  &lt;li&gt;Coffee&lt;/li&gt;<br/>  &lt;li&gt;Tea&lt;/li&gt;<br/>  &lt;li&gt;Milk&lt;/li&gt;<br/>&lt;/ul&gt;<br/>
+                            </code>
+                        </div>
+                    </div>
+
+                    <h4>Ordered HTML List</h4>
+                    <br>
+                    An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt;
+                    tag.
+
+                    The list items will be marked with numbers by default:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;ol&gt;<br/>  &lt;li&gt;Coffee&lt;/li&gt;<br/>  &lt;li&gt;Tea&lt;/li&gt;<br/>  &lt;li&gt;Milk&lt;/li&gt;<br/>&lt;/ol&gt;
+                            <br/>
+                        </code>
+                        </div>
+                    </div>
+                    <br>
+                   
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/html-table']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/html-classes']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        
+        </div>
+    </section>
+
+
+
+
+   
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

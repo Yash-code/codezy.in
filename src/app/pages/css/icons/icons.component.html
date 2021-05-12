@@ -1,0 +1,109 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Icons</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h4>How To Add Icons</h4>
+                    <br>
+                    The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.<br/><br/>Add the name of the specified icon class to any inline HTML element (like &lt;i&gt; or &lt;span&gt;).<br/><br/>All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)
+                    <br>
+                    <br>
+                    <h4>Font Awesome Icons</h4>
+                    <br>
+                    To use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to add in the &lt;head&gt; section of your HTML page:<br/><br/>&lt;script src=&quot;https://kit.fontawesome.com/yourcode.js&quot;&gt;&lt;/script&gt;
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;script src=&quot;https://kit.fontawesome.com/a076d05399.js&quot;&gt;&lt;/script&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;i class=&quot;fas fa-cloud&quot;&gt;&lt;/i&gt;<br/>&lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;<br/>&lt;i class=&quot;fas fa-car&quot;&gt;&lt;/i&gt;<br/>&lt;i class=&quot;fas fa-file&quot;&gt;&lt;/i&gt;<br/>&lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Bootstrap Icons</h4>
+                    <br>
+                    To use the Bootstrap glyphicons, add the following line inside the &lt;head&gt; section of your HTML page:<br/><br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;i class=&quot;glyphicon glyphicon-cloud&quot;&gt;&lt;/i&gt;<br/>&lt;i class=&quot;glyphicon glyphicon-remove&quot;&gt;&lt;/i&gt;<br/>&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;<br/>&lt;i class=&quot;glyphicon glyphicon-envelope&quot;&gt;&lt;/i&gt;<br/>&lt;i class=&quot;glyphicon glyphicon-thumbs-up&quot;&gt;&lt;/i&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Google Icons</h4>
+                    <br>
+                    To use the Google icons, add the following line inside the &lt;head&gt; section of your HTML page:<br/><br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;&gt;
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;i class=&quot;material-icons&quot;&gt;cloud&lt;/i&gt;<br/>&lt;i class=&quot;material-icons&quot;&gt;favorite&lt;/i&gt;<br/>&lt;i class=&quot;material-icons&quot;&gt;attachment&lt;/i&gt;<br/>&lt;i class=&quot;material-icons&quot;&gt;computer&lt;/i&gt;<br/>&lt;i class=&quot;material-icons&quot;&gt;traffic&lt;/i&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/fonts']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/csslink']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+   
+   
+
+
+
+   
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

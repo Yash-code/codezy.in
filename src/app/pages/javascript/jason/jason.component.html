@@ -1,0 +1,239 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript Json</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>JSON is a format for storing and transporting data.
+
+                        JSON is often used when data is sent from a server to a web page.
+                    </p>
+                    <br>
+                    <h4>What is JSON?</h4>
+                    <br>
+                    <ul>
+                        <li>JSON stands for JavaScript Object Notation</li>
+                        <li>JSON is a lightweight data interchange format</li>
+                        <li>JSON is language independent *</li>
+                        <li>JSON is "self-describing" and easy to understand</li>
+                    </ul>
+                    <br>
+                    <p>* The JSON syntax is derived from JavaScript object notation syntax, but the JSON format
+                        is text only. Code for reading and generating JSON data can be written in any
+                        programming language.
+
+                    </p>
+                    <br>
+                    <h4>JSON Example</h4>
+                    <br>
+                    <p>This JSON syntax defines an employees object: an array of 3 employee records (objects):
+                    </p>
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &#123;<br/>&quot;employees&quot;:[<br/>  &#123;&quot;firstName&quot;:&quot;John&quot;, &quot;lastName&quot;:&quot;Doe&quot;&#125;,<br/>  &#123;&quot;firstName&quot;:&quot;Anna&quot;, &quot;lastName&quot;:&quot;Smith&quot;&#123;,<br/>  &#123;&quot;firstName&quot;:&quot;Peter&quot;, &quot;lastName&quot;:&quot;Jones&quot;&#125;<br/>]<br/>&#125;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>The JSON Format Evaluates to JavaScript Objects</h4>
+                    <br>
+                    <p>The JSON format is syntactically identical to the code for creating JavaScript objects.
+
+                        Because of this similarity, a JavaScript program can easily convert JSON data into
+                        native JavaScript objects.
+                    </p>
+                    <br>
+                    <h4>JSON Syntax Rules</h4>
+                    <br>
+                    <ul>
+                        <li>Data is in name/value pairs</li>
+                        <li>Data is separated by commas</li>
+                        <li>Curly braces hold objects</li>
+                        <li>Square brackets hold arrays</li>
+                    </ul>
+                    <br>
+                    <h4>JSON Arrays</h4>
+                    <br>
+                    <p>JSON arrays are written inside square brackets.
+
+                        Just like in JavaScript, an array can contain objects:
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &quot;employees&quot;:[<br/>  &#123;&quot;firstName&quot;:&quot;John&quot;, &quot;lastName&quot;:&quot;Doe&quot;&#125;,<br/>  &#123;&quot;firstName&quot;:&quot;Anna&quot;, &quot;lastName&quot;:&quot;Smith&quot;&#125;,<br/>  &#123;&quot;firstName&quot;:&quot;Peter&quot;, &quot;lastName&quot;:&quot;Jones&quot;&#125;<br/>]
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <p>In the example above, the object "employees" is an array. It contains three objects.
+
+                        Each object is a record of a person (with a first name and a last name).
+
+                    </p>
+
+
+
+
+                    <br>
+
+
+                    <h4>Converting a JSON Text to a JavaScript Object</h4>
+                    <br>
+                    A common use of JSON is to read data from a web server, and display the data in a web page.
+
+                    For simplicity, this can be demonstrated using a string as input.
+
+                    First, create a JavaScript string containing JSON syntax:
+                    <br>
+                    <br>
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var text = '&#123; &quot;employees&quot; : [' +<br/>'&#123; &quot;firstName&quot;:&quot;John&quot; , &quot;lastName&quot;:&quot;Doe&quot; &#125;,' +<br/>'&#123; &quot;firstName&quot;:&quot;Anna&quot; , &quot;lastName&quot;:&quot;Smith&quot; &#125;,' +<br/>'&#123; &quot;firstName&quot;:&quot;Peter&quot; , &quot;lastName&quot;:&quot;Jones&quot; &#125; ]&#125;';
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+
+
+                    <p>Then, use the JavaScript built-in function JSON.parse() to convert the string into a
+                        JavaScript object:
+                    </p>
+                    <br>
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var obj = JSON.parse(text);
+                                    <br/>
+                                </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <p>Finally, use the new JavaScript object in your page:</p>
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br/><br/>&lt;script&gt;<br/>document.getElementById(&quot;demo&quot;).innerHTML =<br/>obj.employees[1].firstName + &quot; &quot; + obj.employees[1].lastName;<br/>&lt;/script&gt;
+                                    <br/>
+                         </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/debuggin']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+
+                <div class="col-7">
+
+                </div>
+
+
+            </div>
+            <br />
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

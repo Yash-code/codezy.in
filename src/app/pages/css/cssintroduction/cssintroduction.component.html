@@ -1,0 +1,92 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Introduction</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    
+                    <p>
+                        CSS stands for Cascading Style Sheets.
+                        <br>
+                        CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+                        <br>
+                        CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+                        <br>
+                        External stylesheets are stored in CSS files
+                    </p>
+                    <br>
+                    <h4>Why Use CSS?</h4>
+                    <br>
+                    CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                SS Example<br/>body &#123;<br/>  background-color: lightblue;<br/>&#125;<br/><br/>h1 &#123;<br/>  color: white;<br/>  text-align: center;<br/>&#125;<br/><br/>p &#123;<br/>  font-family: verdana;<br/>  font-size: 20px;<br/>&#125;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>CSS Solved a Big Problem</h4>
+                    <br>
+                    HTML was NEVER intended to contain tags for formatting a web page!<br/><br/>HTML was created to describe the content of a web page, like:<br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;<br/><br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br/><br/>When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.<br/><br/>To solve this problem, the World Wide Web Consortium (W3C) created CSS.<br/><br/>CSS removed the style formatting from the HTML page!
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/homecss']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/syntax']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        
+        </div>
+    </section>
+   
+   
+
+
+
+   
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

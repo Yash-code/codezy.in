@@ -1,0 +1,144 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Align</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    
+                    <h4>Center Align Elements</h4>
+                    To horizontally center a block element (like &lt;div&gt;), use margin: auto;
+                    <br>
+                    Setting the width of the element will prevent it from stretching out to the edges of its container.
+                    <br>
+                    The element will then take up the specified width, and the remaining space will be split equally between the two margins:
+                    <br>
+                    
+                    
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                .center &#123;<br/>  margin: auto;<br/>  width: 50%;<br/>  border: 3px solid green;<br/>  padding: 10px;<br/>&#125;
+                            </code>
+
+                        </div>
+                    </div>
+                    <h4>Center Align Text</h4>
+                    <br>
+                    To just center the text inside an element, use text-align: center;
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                .center &#123;<br/>  text-align: center;<br/>  border: 3px solid green;<br/>&#125;
+                            </code>
+
+                        </div>
+                    </div>
+                    <h4>Center an Image</h4>
+                    <br>
+                    To center an image, set left and right margin to auto and make it into a block element:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                img &#123;<br/>  display: block;<br/>  margin-left: auto;<br/>  margin-right: auto;<br/>  width: 40%;<br/>&#125;
+                            </code>
+
+                        </div>
+                    </div>
+                    <h4>Left and Right Align - Using position</h4>
+                    <br>
+                    One method for aligning elements is to use position: absolute;:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                .right &#123;<br/>  position: absolute;<br/>  right: 0px;<br/>  width: 300px;<br/>  border: 3px solid #73AD21;<br/>  padding: 10px;<br/>&#125;
+                            </code>
+
+                        </div>
+                    </div>
+
+                    <h4>Left and Right Align - Using float</h4>
+                    <br>
+                    Another method for aligning elements is to use the float property:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                .right &#123;<br/>  float: right;<br/>  width: 300px;<br/>  border: 3px solid #73AD21;<br/>  padding: 10px;<br/>&#125;
+                            </code>
+
+                        </div>
+                    </div>
+
+                    <h4>Center Vertically - Using padding</h4>
+                    <br>
+                    <ul>
+                        <li>There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom padding.</li>
+                        <li>To center both vertically and horizontally, use padding and text-align: center:</li>
+                        
+                    </ul>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                .center &#123;<br/>  padding: 70px 0;<br/>  border: 3px solid green;<br/>&#125;
+                                <br>
+                                .center &#123;<br/>  padding: 70px 0;<br/>  border: 3px solid green;<br/>  text-align: center;<br/>&#125;
+                            </code>
+                        </div>
+                    </div>
+                  
+                    <br>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/floatinlineblock']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/navigationbar']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+   
+   
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

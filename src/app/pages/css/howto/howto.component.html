@@ -1,0 +1,171 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">How To Add CSS</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>When a browser reads a style sheet, it will format the HTML document according to the
+                        information in the style sheet.</p>
+
+
+
+                    <br>
+
+
+                    <h4>Three Ways to Insert CSS</h4>
+                    <br>
+                    There are three ways of inserting a style sheet:
+                    <br>
+
+                    <ul>
+                        <li>External CSS</li>
+                        <li>Internal CSS</li>
+                        <li>Inline CSS</li>
+
+                    </ul>
+                    <br>
+                    <h4>External CSS</h4>
+                    <br>
+                    <p>With an external style sheet, you can change the look of an entire website by changing
+                        just one file!
+
+                        Each HTML page must include a reference to the external style sheet file inside the
+                        &lt;link&gt; element, inside the head section.</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;<br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <h4>Internal CSS</h4>
+                    <br>
+                    <p>An internal style sheet may be used if one single HTML page has a unique style.
+
+                        The internal style is defined inside the &lt;style&gt; element, inside the head section.
+                    </p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;style&gt;<br/>body &#123;<br/>  background-color: linen;<br/>&#125;<br/><br/>h1 &#123;<br/>  color: maroon;<br/>  margin-left: 40px;<br/>&#125;<br/>&lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;<br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Inline CSS</h4>
+                    <br>
+                    <p>An inline style may be used to apply a unique style for a single element.
+
+                        To use inline styles, add the style attribute to the relevant element. The style
+                        attribute can contain any CSS property.</p>
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;<br/>&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Cascading Order</h4>
+                    <br>
+                    <p>What style will be used when there is more than one style specified for an HTML element?
+
+                        All the styles in a page will "cascade" into a new "virtual" style sheet by the
+                        following rules, where number one has the highest priority:</p>
+                    <br>
+                    <ul>
+                        <li>Inline style (inside an HTML element)</li>
+                        <li>External and internal style sheets (in the head section)</li>
+                        <li>Browser default</li>
+                    </ul>
+                    <br>
+                    <p>So, an inline style has the highest priority, and will override external and internal styles and
+                        browser defaults.
+                    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/syntax']" type="button" class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/comments']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+
+
+   
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

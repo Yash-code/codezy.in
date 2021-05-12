@@ -1,0 +1,197 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript Booleans</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>A JavaScript Boolean represents one of two values: true or false.
+                    </p>
+                    <br>
+                    <h4>Boolean Values</h4>
+                    <br>
+                    <p>Very often, in programming, you will need a data type that can only have one of two
+                        values, like
+                    </p>
+                    <br>
+                    <ul>
+                        <li>YES / NO</li>
+                        <li>ON / OFF</li>
+                        <li>TRUE / FALSE</li>
+                    </ul>
+                    <br>
+                    <p>For this, JavaScript has a Boolean data type. It can only take the values true or false.
+                    </p>
+                    <br>
+                    <h4>The Boolean() Function</h4>
+                    <br>
+                    <p>You can use the Boolean() function to find out if an expression (or a variable) is true:
+                    </p>
+                    <br>
+
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                              (10 &gt; 9)              // also returns true<br/>10 &gt; 9                // also returns true<br/>
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Everything With a "Value" is True</h4>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                100<br/><br/>3.14<br/><br/>-15<br/><br/>&quot;Hello&quot;<br/><br/>&quot;false&quot;<br/><br/>7 + 1 + 3.14<br/>
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Everything Without a "Value" is False</h4>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x = 0;<br/>Boolean(x);       // returns false
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+
+                    <br>
+
+
+                    <h4>Booleans Can be Objects</h4>
+                    <br>
+                    Normally JavaScript booleans are primitive values created from literals:
+                    <br>
+
+                    var x = false;
+                    <br>
+
+                    But booleans can also be defined as objects with the keyword new:
+                    <br>
+
+                    var y = new Boolean(false);
+                    <br>
+                    <br>
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                var x = false;<br/>var y = new Boolean(false);<br/><br/>// typeof x returns boolean<br/>// typeof y returns object
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="row">
+        <div class="col-5 text-left">
+            <a [routerLink]="['/jsdats']" type="button"
+                class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+        </div>
+
+        <div class="col-4">
+
+        </div>
+        <div class="col-3 text-right">
+            <a [routerLink]="['/jsforloop']" type="button"
+                class="btn btn-success btn-flat btn-lg text-white">Next</a>
+        </div>
+
+    </div>
+    <br />
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

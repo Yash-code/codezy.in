@@ -1,0 +1,177 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript Comments</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+
+                        JavaScript comments can also be used to prevent execution, when testing alternative
+                        code.
+                    </p>
+                    <br>
+                    <h4>Single Line Comments</h4>
+                    <br>
+                    <p>Single line comments start with //.
+
+                        Any text between // and the end of the line will be ignored by JavaScript (will not be
+                        executed).
+
+                        This example uses a single-line comment before each code line:
+                    </p>
+                    <br>
+
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                               Change heading:<br/>document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First Page&quot;;<br/><br/>// Change paragraph:<br/>document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+
+
+                    <h4>Multi-line Comments</h4>
+                    <br>
+                    Multi-line comments start with /* and end with */.
+
+                    Any text between /* and */ will be ignored by JavaScript.
+
+                    This example uses a multi-line comment (a comment block) to explain the code:
+                    <br>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                The code below will change<br/>the heading with id = &quot;myH&quot;<br/>and the paragraph with id = &quot;myP&quot;<br/>in my web page:<br/>*/<br/>document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First Page&quot;;<br/>document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;;<br/>
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+
+                    <h4>Using Comments to Prevent Execution</h4>
+                    <br>
+                    <p>Using comments to prevent execution of code is suitable for code testing.
+
+                        Adding // in front of a code line changes the code lines from an executable line to a
+                        comment.
+
+                        This example uses // to prevent execution of one of the code lines:
+                    </p>
+
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                //document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First Page&quot;;<br/>document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+                 
+                    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/jswhereto']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+        
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/jsstatement']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

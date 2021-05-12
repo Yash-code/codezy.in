@@ -1,0 +1,198 @@
+<app-home-header></app-home-header>
+<app-js-sidenav></app-js-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">JavaScript Events</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h4>HTML Events</h4>
+                    <br>
+                    <p>An HTML event can be something the browser does, or something a user does.
+
+                        Here are some examples of HTML events:.
+                    </p>
+                    <br>
+                    <ul>
+                        <li>An HTML web page has finished loading</li>
+                        <li>An HTML input field was changed</li>
+                        <li>An HTML button was clicked</li>
+
+                    </ul>
+                    <br>
+                    <p>In the following example, an onclick attribute (with code), is added to a &lt;button&gt;
+                        element:</p>
+                    <br>
+
+
+
+
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;button onclick=&quot;document.getElementById('demo').innerHTML = Date()&quot;&gt;The time is?&lt;/button&gt;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+
+
+
+                    In the example above, the JavaScript code changes the content of the element with id="demo".
+
+                    In the next example, the code changes the content of its own element (using this.innerHTML):
+                    <br>
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;button onclick=&quot;this.innerHTML = Date()&quot;&gt;The time is?&lt;/button&gt;
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+
+                    <h4>Common HTML Events</h4>
+                    <br>
+                    <p>Here is a list of some common HTML events:
+                    </p>
+
+                    <br>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Description</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>onchange</td>
+                                <td>An HTML element has been changed</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>onclick</td>
+                                <td>The user clicks an HTML element</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>onmouseover/td>
+                                <td>The user moves the mouse over an HTML element</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>onmouseout</td>
+                                <td>The user moves the mouse away from an HTML element</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>onkeydown</td>
+                                <td>The user pushes a keyboard key</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>onload</td>
+                                <td>The browser has finished loading the page</td>
+
+
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                    <br>
+                    <h4>What can JavaScript Do?</h4>
+                    <br>
+                    <p>Event handlers can be used to handle, and verify, user input, user actions, and browser
+                        actions:</p>
+                    <br>
+                    <ul>
+                        <li>Things that should be done every time a page loads</li>
+                        <li>Things that should be done when the page is closed</li>
+                        <li>Action that should be performed when a user clicks a button</li>
+                        <li>Content that should be verified when a user inputs data</li>
+                        <li>And more ...</li>
+                    </ul>
+                    <br>
+                    <p>Many different methods can be used to let JavaScript work with events:</p>
+                    <br>
+                    <ul>
+                        <li>HTML event attributes can execute JavaScript code directly</li>
+                        <li>HTML event attributes can call JavaScript functions</li>
+                        <li>You can assign your own event handler functions to HTML elements</li>
+                        <li>You can prevent events from being sent or being handled</li>
+                        <li>And more ...</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/jsobjects']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+        
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/jsstrings']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        
+        </div>
+    </section>
+    
+
+
+    
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

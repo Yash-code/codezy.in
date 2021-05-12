@@ -1,0 +1,174 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Dropdown</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>Create a hoverable dropdown with CSS.</p>
+                    <h4>Demo: Dropdown Examples</h4>
+                    Move the mouse over the examples below:
+                    <br>
+                    <i>Keep your cursor on the text</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="dropdown" style="position:relative;top:15px;">
+                        <span class="dropspan">Dropdown Text</span>
+                        <div class="dropdown-content" style="padding:8px 16px;min-width:150px;text-align:center">
+                            <p>Hello World!</p>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <h4>Basic Dropdown</h4>
+                    <br>
+                    Create a dropdown box that appears when the user moves the mouse over an element.
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;style&gt;<br/>.dropdown &#123;<br/>  position: relative;<br/>  display: inline-block;<br/>&#125;<br/><br/>.dropdown-content &#123;<br/>  display: none;<br/>  position: absolute;<br/>  background-color: #f9f9f9;<br/>  min-width: 160px;<br/>  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);<br/>  padding: 12px 16px;<br/>  z-index: 1;<br/>&#125;<br/><br/>.dropdown:hover .dropdown-content &#123;<br/>  display: block;<br/>&#125;<br/>&lt;/style&gt;<br/><br/>&lt;div class=&quot;dropdown&quot;&gt;<br/>  &lt;span&gt;Mouse over me&lt;/span&gt;<br/>  &lt;div class=&quot;dropdown-content&quot;&gt;<br/>    &lt;p&gt;Hello World!&lt;/p&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <h4>Example Explained</h4>
+                    <br>
+                    HTML) Use any element to open the dropdown content, e.g. a &lt;span&gt;, or a &lt;button&gt;
+                    element.<br /><br />Use a container element (like &lt;div&gt;) to create the dropdown content and
+                    add whatever you want inside of it.<br /><br />Wrap a &lt;div&gt; element around the elements to
+                    position the dropdown content correctly with CSS.<br /><br />CSS) The .dropdown class uses
+                    position:relative, which is needed when we want the dropdown content to be placed right below the
+                    dropdown button (using position:absolute).<br /><br />The .dropdown-content class holds the actual
+                    dropdown content. It is hidden by default, and will be displayed on hover (see below). Note the
+                    min-width is set to 160px. Feel free to change this. Tip: If you want the width of the dropdown
+                    content to be as wide as the dropdown button, set the width to 100% (and overflow:auto to enable
+                    scroll on small screens).<br /><br />Instead of using a border, we have used the CSS box-shadow
+                    property to make the dropdown menu look like a &quot;card&quot;.<br /><br />The :hover selector is
+                    used to show the dropdown menu when the user moves the mouse over the dropdown button.
+                    <br><br><br>
+                    <h4>Dropdown Menu</h4>
+                    <br>
+                    Create a dropdown menu that allows the user to choose an option from a list:
+                    <div class="dropdown dropdown2">
+                        <button class="dropbtn dropbtn2">Dropdown Menu</button>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0)">Link 1</a>
+                            <a href="javascript:void(0)">Link 2</a>
+                            <a href="javascript:void(0)">Link 3</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;style&gt;<br/>/* Style The Dropdown Button */<br/>.dropbtn &#123;<br/>  background-color: #4CAF50;<br/>  color: white;<br/>  padding: 16px;<br/>  font-size: 16px;<br/>  border: none;<br/>  cursor: pointer;<br/>&#125;<br/><br/>/* The container &lt;div&gt; - needed to position the dropdown content */<br/>.dropdown &#123;<br/>  position: relative;<br/>  display: inline-block;<br/>&#125;<br/><br/>/* Dropdown Content (Hidden by Default) */<br/>.dropdown-content &#123;<br/>  display: none;<br/>  position: absolute;<br/>  background-color: #f9f9f9;<br/>  min-width: 160px;<br/>  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);<br/>  z-index: 1;<br/>&#125;<br/><br/>/* Links inside the dropdown */<br/>.dropdown-content a &#123;<br/>  color: black;<br/>  padding: 12px 16px;<br/>  text-decoration: none;<br/>  display: block;<br/>&#125;<br/><br/>/* Change color of dropdown links on hover */<br/>.dropdown-content a:hover &#123;background-color: #f1f1f1&#125;<br/><br/>/* Show the dropdown menu on hover */<br/>.dropdown:hover .dropdown-content &#123;<br/>  display: block;<br/>&#125;<br/><br/>/* Change the background color of the dropdown button when the dropdown content is shown */<br/>.dropdown:hover .dropbtn &#123;<br/>  background-color: #3e8e41;<br/>&#125;<br/>&lt;/style&gt;<br/><br/>&lt;div class=&quot;dropdown&quot;&gt;<br/>  &lt;button class=&quot;dropbtn&quot;&gt;Dropdown&lt;/button&gt;<br/>  &lt;div class=&quot;dropdown-content&quot;&gt;<br/>    &lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;<br/>    &lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;<br/>    &lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;
+
+                                <br/>
+                                </code>
+                        </div>
+                    </div>
+                   
+                    If you want the dropdown menu to go from right to left, instead of left to right, add right: 0;
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/navigationbar']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-7">
+        
+                </div>
+        
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+</style>
+<app-home-footer></app-home-footer>

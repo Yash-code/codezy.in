@@ -1,0 +1,238 @@
+<app-home-header></app-home-header>
+<app-html-sidenav></app-html-sidenav>
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+
+    <div class="content-header text-break">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HTML Links</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    Links are found in nearly all web pages. Links allow users to click their way from page to
+                    page.
+
+
+
+
+                    <br><br>
+                    <h4>HTML Links - Hyperlinks</h4>
+                    <br>
+                    HTML links are hyperlinks.
+
+                    You can click on a link and jump to another document.
+
+                    When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+
+                    <br><br>
+                    <h4>HTML Links - Syntax</h4>
+                    <br>
+                    The HTML &lt;a&gt; tag defines a hyperlink.
+                    <br>
+                    The most important attribute of the &lt;a&gt; element is the href attribute, which indicates
+                    the link's destination.
+
+                    The link text is the part that will be visible to the reader.
+
+                    Clicking on the link text, will send the reader to the specified URL address.
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                   &lt;a href=&quot;url&quot;&gt;link text&lt;/a&gt;
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Example</h4>
+
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                        &lt;a href=&quot;https://       /&quot;&gt;     &lt;/a&gt;
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <h4>HTML Links - The target Attribute</h4>
+                    <br>
+                    By default, the linked page will be displayed in the current browser window. To change this,
+                    you must specify another target for the link.
+                    <br>
+                    The target attribute specifies where to open the linked document.
+                    <br>
+
+                    <br>
+
+                    <h4>Absolute URLs vs. Relative URLs</h4>
+                    <br>
+                    Both examples above are using an absolute URL (a full web address) in the href attribute.
+
+                    A local link (a link to a page within the same website) is specified with a relative URL
+                    (without the "https://www" part):
+                    <br>
+
+
+
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                    &&lt;h2&gt;Absolute URLs&lt;/h2&gt;<br/>&lt;p&gt;&lt;a href=&quot;https://www.w3.org/&quot;&gt;W3C&lt;/a&gt;&lt;/p&gt;<br/>&lt;p&gt;&lt;a href=&quot;https://www.google.com/&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;<br/><br/>&lt;h2&gt;Relative URLs&lt;/h2&gt;<br/>&lt;p&gt;&lt;a href=&quot;html_images.asp&quot;&gt;HTML Images&lt;/a&gt;&lt;/p&gt;<br/>&lt;p&gt;&lt;a href=&quot;/css/default.asp&quot;&gt;CSS Tutorial&lt;/a&gt;&lt;/p&gt;
+
+                                    <br/>
+                                </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>HTML Links - Use an Image as a Link</h4>
+                    <br>To use an image as a link, just put the &lt;img&gt tag inside the &lt;a&gt tag:
+                    <br>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>&lt;
+                                        link rel=&quot;
+                                        stylesheet&quot;
+                                        href=&quot;
+                                        https: //www.w3schools.com/html/styles.css&quot;&gt;<br/><br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;/html/styles.css&quot;&gt;<br/><br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;<br/>
+                                        </code>
+                        </div>
+                    </div>
+                    <br>
+                    <br />
+
+
+
+
+
+
+
+                    <h4>Button as a Link</h4>
+                    <br>To use an HTML button as a link, you have to add some JavaScript code.
+
+                    JavaScript allows you to specify what happens at certain events, such as a click of a
+                    button:
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;button onclick=&quot;document.location='default.asp'&quot;&gt;HTML Tutorial&lt;/button&gt;
+                        </code>
+                        </div>
+                    </div>
+                    <br>
+                    <H4>Link Titles</H4>
+                    <br>The title attribute specifies extra information about an element. The information is
+                    most often shown as a tooltip text when the mouse moves over the element.
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;a href=&quot;https://www.-----.com/html/&quot; title=&quot;Go to----HTML section&quot;&gt;Visit our HTML Tutorial&lt;/a&gt;
+
+                            <br/><br>
+                        </code>
+                        </div>
+                    </div>
+                    <H4>More on Absolute URLs and Relative URL</H4>
+                    <br>
+                    Use a full URL to link to a web page:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;a href=&quot;https://www.----.com/html/default.asp&quot;&gt;HTML tutorial&lt;/a&gt;
+
+                            <br/>
+                        </code>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    Link to a page located in the html folder on the current web site:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;a href=&quot;/html/default.asp&quot;&gt;HTML tutorial&lt;/a&gt;
+
+                            <br/>
+                        </code>
+                        </div>
+                    </div>
+                    <br>
+                    Link to a page located in the same folder as the current page:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;a href=&quot;default.asp&quot;&gt;HTML tutorial&lt;/a&gt;
+
+                            <br/>
+                        </code>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/html-css']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/html-images']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        
+        </div>
+    </section>
+
+
+
+
+   
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

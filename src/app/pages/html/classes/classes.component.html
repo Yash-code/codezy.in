@@ -1,0 +1,141 @@
+<app-home-header></app-home-header>
+<app-html-sidenav></app-html-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HTML Classes</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    The HTML class attribute is used to specify a class for an HTML element.<br>
+
+                    Multiple HTML elements can share the same class.<br>
+
+                    <h4>Using The class Attribute</h4>
+
+                    <ul>
+                        <li>The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.</li>
+                        <li>In the following example we have three &lt;div&gt; elements with a class attribute with the value of &quot;city&quot;. All of the three &lt;div&gt; elements will be styled equally according to the .city style definition in the head section:</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;style&gt;<br/>.city &#123;<br/>  background-color: tomato;<br/>  color: white;<br/>  border: 2px solid black;<br/>  margin: 20px;<br/>  padding: 20px;<br/>&#125;<br/>&lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;div class=&quot;city&quot;&gt;<br/>  &lt;h2&gt;London&lt;/h2&gt;<br/>  &lt;p&gt;London is the capital of England.&lt;/p&gt;<br/>&lt;/div&gt;<br/><br/>&lt;div class=&quot;city&quot;&gt;<br/>  &lt;h2&gt;Paris&lt;/h2&gt;<br/>  &lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br/>&lt;/div&gt;<br/><br/>&lt;div class=&quot;city&quot;&gt;<br/>  &lt;h2&gt;Tokyo&lt;/h2&gt;<br/>  &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br/>&lt;/div&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <h4>The Syntax For Class</h4>
+                    <br>
+                    To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces &#123; &#125;:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;style&gt;<br/>.city &#123;<br/>  background-color: tomato;<br/>  color: white;<br/>  padding: 10px;<br/>&#125;<br/>&lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;h2 class=&quot;city&quot;&gt;London&lt;/h2&gt;<br/>&lt;p&gt;London is the capital of England.&lt;/p&gt;<br/><br/>&lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br/>&lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br/><br/>&lt;h2 class=&quot;city&quot;&gt;Tokyo&lt;/h2&gt;<br/>&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <br>
+
+
+                    <h4>Multiple Classes</h4>
+                    <br>
+
+                    HTML elements can belong to more than one class.<br/><br/>To define multiple classes, separate the class names with a space, e.g. &lt;div class=&quot;city main&quot;&gt;. The element will be styled according to all the classes specified.<br/><br/>In the following example, the first &lt;h2&gt; element belongs to both the city class and also to the main class, and will get the CSS styles from both of the classes: 
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;h2 class=&quot;city main&quot;&gt;London&lt;/h2&gt;<br/>&lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br/>&lt;h2 class=&quot;city&quot;&gt;Tokyo&lt;/h2&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <h4>Different Elements Can Share Same Class</h4>
+                    <br>
+                    Different HTML elements can point to the same class name.<br/><br/>In the following example, both &lt;h2&gt; and &lt;p&gt; points to the &quot;city&quot; class and will share the same style:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br/>&lt;p class=&quot;city&quot;&gt;Paris is the capital of France&lt;/p&gt;
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Use of The class Attribute in JavaScript</h4>
+
+                    The class name can also be used by JavaScript to perform certain tasks for specific elements.<br/><br/>JavaScript can access elements with a specific class name with the getElementsByClassName() method:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;script&gt;<br/>function myFunction() &#123;<br/>  var x = document.getElementsByClassName(&quot;city&quot;);<br/>  for (var i = 0; i &lt; x.length; i++) &#123;<br/>    x[i].style.display = &quot;none&quot;;<br/>  &#125;<br/>&#125;<br/>&lt;/script&gt;
+                            </code>
+                        </div>
+                    </div>
+                    <h4>Chapter Summary</h4>
+                    <ul>
+                        <li>
+                            The HTML class attribute specifies one or more class names for an element
+                        </li>
+                        <li>Classes are used by CSS and JavaScript to select and access specific elements</li>
+                        <li>The class attribute can be used on any HTML element</li>
+                        <li>The class name is case sensitive</li>
+                        <li>Different HTML elements can point to the same class name</li>
+                        <li>JavaScript can access elements with a specific class name with the getElementsByClassName() method</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/html-lists']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/html-id']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        
+        </div>
+    </section>
+
+
+
+
+   
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

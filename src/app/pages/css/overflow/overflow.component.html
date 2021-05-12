@@ -1,0 +1,138 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Layout Overflow</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    The CSS overflow property controls what happens to content that is too big to fit into an area.
+                    <br><br>
+                    <h4>CSS Overflow</h4>
+                    The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+                    <br>
+                    The overflow property has the following values:
+                    <ul>
+                        <li>visible - Default. The overflow is not clipped. The content renders outside the element's box</li>
+                        <li>hidden - The overflow is clipped, and the rest of the content will be invisible</li>
+                        <li>scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+                        <li>auto - Similar to scroll, but it adds scrollbars only when necessary</li>
+                    </ul>
+                    <br>
+                    <h4>overflow: visible</h4>
+                    
+                    By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                div &#123;<br/>  width: 200px;<br/>  height: 50px;<br/>  background-color: #eee;<br/>  overflow: visible;<br/>&#125;
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>overflow: hidden</h4>
+                    
+                    With the hidden value, the overflow is clipped, and the rest of the content is hidden:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                div &#123;<br/>  overflow: hidden;<br/>&#125;
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>overflow: scroll</h4>
+                    
+                    Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                div &#123;
+                                    overflow: scroll;
+                                  &#125;
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>overflow: auto</h4>
+                    
+                    The auto value is similar to scroll, but it adds scrollbars only when necessary:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                div &#123;
+                                    overflow: auto;
+                                  &#125;
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>overflow-x and overflow-y</h4>
+                    The overflow-x and overflow-y properties specifies whether to change the overflow of content just horizontally or vertically (or both):<br/><br/>overflow-x specifies what to do with the left/right edges of the content.<br/>overflow-y specifies what to do with the top/bottom edges of the content.
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                div &#123;
+                                    overflow-x: hidden; /* Hide horizontal scrollbar */
+                                    overflow-y: scroll; /* Add vertical scrollbar */
+                                  &#125;
+                            </code>
+                        </div>
+                    </div>
+
+
+
+                    
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/position']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/floatinlineblock']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+   
+   
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

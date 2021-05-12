@@ -1,0 +1,224 @@
+<app-home-header></app-home-header>
+<app-html-sidenav></app-html-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HTML Paragraph</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    The HTML &lt;p&gt; element defines a paragraph.
+                    <br>
+                    A paragraph always starts on a new line, and browsers automatically add some white space (a
+                    margin) before
+                    and after a paragraph.
+                    <br>
+
+                    <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;p&gt;This is another paragraph.&lt;/p&gt;
+    
+                 </code>
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <h4>HTML Display</h4>
+                    <ul>
+                        <li>
+                            You cannot be sure how HTML will be displayed.
+                        </li>
+                        <li>
+                            Large or small screens, and resized windows will create different results.
+                            With HTML, you cannot change the display by adding extra spaces or extra lines in
+                            your HTML code.
+                        </li>
+                        <li>
+
+                            The browser will automatically remove any extra spaces and lines when the page is
+                            displayed: </li>
+                    </ul>
+                    <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+
+    &lt;p&gt; <br>
+    This paragraph<br>
+    contains a lot of lines<br>
+    in the source code, <br>
+    but the browser<br>
+    ignores it. <br>
+    &lt;/p&gt; <br>
+    <br>
+    &lt;p&gt; <br>
+    This paragraph<br>
+    contains         a lot of spaces<br>
+    in the source         code, <br>
+    but the        browser<br>
+    ignores it. <br>
+    &lt;/p&gt; <br>
+    
+                         
+                        </code>
+                        </div>
+
+                    </div>
+
+                    <h4>HTML Horizontal Rules</h4>
+                    <br>
+                    The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as
+                    a
+                    horizontal rule.
+                    <br>
+                    The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page:
+                    <br>
+                    <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+
+    &lt;h1&gt;This is heading 1&lt;/h1&gt; <br>
+    &lt;p&gt;This is some text.&lt;/p&gt; <br>
+    &lt;hr&gt; <br>
+    &lt;h2&gt;This is heading 2&lt;/h2&gt; <br>
+    &lt;p&gt;This is some other text.&lt;/p&gt; <br>
+    &lt;hr&gt; <br>
+            </code>
+                        </div>
+
+                    </div>
+
+
+                    The &lt;hr&gt; tag is an empty tag, which means that it has no end tag. <br>
+
+                    <br>
+                    <br>
+                    <h4>HTML Line Breaks</h4>
+                    <br>
+                    The HTML &lt;br&gt; element defines a line break.
+                    <br>
+                    Use &lt;br&gt; if you want a line break (a new line) without starting a new paragraph:
+                    <br>
+                    <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+    &lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;
+                        </code>
+                        </div>
+
+                    </div>
+                    
+
+                    The &lt;br&gt; tag is an empty tag, which means that it has no end tag.
+                    <br><br>
+                    <h4>The Poem Problem</h4>
+                   
+                    This poem will display on a single line:
+                    <br>
+
+
+                    <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+    &lt;p&gt;<br>
+      My Bonnie lies over the ocean.<br>
+    
+      My Bonnie lies over the sea.<br>
+    
+      My Bonnie lies over the ocean.<br>
+    
+      Oh, bring back my Bonnie to me.<br>
+    &lt;/p&gt;<br>
+                         
+                        </code>
+                        </div>
+
+                    </div>
+
+
+                    <h4>Solution - The HTML &lt;pre&gt; Element</h4>
+                    <br>
+                    The HTML &lt;pre&gt; element defines preformatted text.
+                    <br>
+                    The text inside a &lt;pre&gt; element is displayed in a fixed-width font (usually Courier),
+                    and it
+                    preserves both spaces and line breaks:
+                    <br>
+                    <div class="card-body">
+
+                        <div class="callout callout-success rounded-0">
+                            <code>
+
+
+    &lt;pre&gt;
+      My Bonnie lies over the ocean.
+    
+      My Bonnie lies over the sea.
+    
+      My Bonnie lies over the ocean.
+    
+      Oh, bring back my Bonnie to me.
+    &lt;/pre&gt;
+              </code>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/html-headings']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/html-style']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+
+            </div>
+            <br />
+
+
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

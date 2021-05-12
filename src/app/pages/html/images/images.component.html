@@ -1,0 +1,177 @@
+<app-home-header></app-home-header>
+<app-html-sidenav></app-html-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HTML Images</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    Images can improve the design and the appearance of a web page.
+                    <br>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;img src=&quot;image.jpg&quot; alt=&quot;Italian Trulli&quot;&gt;
+                            </code>
+                        </div>
+                    </div>
+                    <h4>HTML Images Syntax</h4>
+                    <br>
+                    <ul>
+                        <li>The HTML &lt;img&gt; tag is used to embed an image in a web page.</li>
+                        <li>Images are not technically inserted into a web page; images are linked to web pages. The
+                            &lt;img&gt; tag creates a holding space for the referenced image.</li>
+                        <li>The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag. </li>
+                        <li>The &lt;img&gt; tag has two required attributes: </li>
+                        <ul>
+                            <li>src - Specifies the path to the image</li>
+                            <li>alt - Specifies an alternate text for the image</li>
+                        </ul>
+                    </ul>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;img src=&quot;url&quot; alt=&quot;alternatetext&quot;&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    
+                    <br>The required src attribute specifies the path (URL) to the image.
+                    <br>The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+                    <br>If a browser cannot find an image, it will display the value of the alt attribute.
+                    <br><br>
+                    <h4>Image Size - Width and Height</h4>
+                    <ul>
+                    <li>You can use the style attribute to specify the width and height of an image.</li>
+                    <li>Alternatively, you can use the width and height attributes.</li>
+                    <li>The width and height attributes always define the width and height of the image in pixels.</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl in a jacket&quot; style=&quot;width:500px;height:600px;&quot;&gt; <br>
+                                &lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl in a jacket&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Width and Height, or Style?</h4>
+                    <br>
+                    The width, height, and style attributes are all valid in HTML.
+                    <br>
+                    However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;style&gt;<br/>img &#123;<br/>  width: 100%;<br/>&#125;<br/>&lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;img src=&quot;html5.gif&quot; alt=&quot;HTML5 Icon&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;<br/><br/>&lt;img src=&quot;html5.gif&quot; alt=&quot;HTML5 Icon&quot; style=&quot;width:128px;height:128px;&quot;&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+                                </code>
+                        </div>
+                    </div>
+                    <h4>Images in Another Folder</h4>
+                    <br>
+                    If you have your images in a sub-folder, you must include the folder name in the src attribute.
+                    <br><br>
+                    <h4>Images on Another Server</h4>
+                    <br>
+                    Some web sites store their images on another server.
+                    <br>
+                    Actually, you can access images from any web address in the world.<br>
+                    <br>
+                    <h4>Image as a Link</h4>
+                    <br>
+                    To use an image as a link, put the &lt;img&gt; tag inside the &lt;a&gt; tag:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;a href=&quot;----&quot;&gt;<br/>
+                                &lt;img src=&quot;smiley.gif&quot; alt=&quot;HTML tutorial&quot; style=&quot;width:42px; height:42px; &quot;&gt;<br/>&lt;/a&gt;
+                            </code>
+                        </div>
+                    </div>
+                    
+                    <h4>Image Floating</h4>
+                    <br>
+                    Use the CSS float property to let the image float to the right or to the left of a text:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;p&gt;&lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot; style=&quot;float:right;width:42px;height:42px;&quot;&gt;<br/>The image will float to the right of the text.&lt;/p&gt;<br/><br/>&lt;p&gt;&lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot; style=&quot;float:left;width:42px;height:42px;&quot;&gt;<br/>The image will float to the left of the text.&lt;/p&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <h4>Chapter Summary</h4>
+                    <ul>
+                        <li>Use the HTML &lt;img&gt; element to define an image.</li>
+                        <li>Use the HTML src attribute to define the URL of the image.</li>
+                        <li>Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed.</li>
+                        <li>Use the HTML width and height attributes or the CSS width and height properties to define the size of the image.</li>
+                        <li>Use the CSS float property to let the image float to the left or to the right.</li>
+                      
+                    </ul>
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/html-links']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/html-table']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

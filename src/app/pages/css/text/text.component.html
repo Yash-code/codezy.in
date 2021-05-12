@@ -1,0 +1,140 @@
+<app-home-header></app-home-header>
+<app-css-sidenav></app-css-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">CSS Text</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    
+                    <h4>Text Color</h4>
+                    <br>
+                    The color property is used to set the color of the text. The color is specified by:
+                    <br>
+                    <ul>
+                        <li>a color name - like "red"</li>
+                        <li>a HEX value - like "#ff0000"</li>
+                        <li>an RGB value - like "rgb(255,0,0)"</li>
+                    </ul>
+                    <br>
+                    The default text color for a page is defined in the body selector.
+                    <br>
+                    <br>
+                    <h4>Text Color and Background Color</h4>
+                    <br>
+                    We define both the background-color property and the color property.
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                body &#123;<br/>  background-color: lightgrey;<br/>  color: blue;<br/>&#125;<br/><br/>h1 &#123;<br/>  background-color: black;<br/>  color: white;<br/>&#125;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Text Alignment</h4>
+                    <br>
+                    The text-align property is used to set the horizontal alignment of a text.<br/><br/>A text can be left or right aligned, centered, or justified.
+                    <br>
+                    When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight.
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                h1 &#123;<br/>  text-align: center;<br/>&#125;<br/><br/>h2 &#123;<br/>  text-align: left;<br/>&#125;<br/><br/>h3 &#123;<br/>  text-align: right;<br/>&#125;<br/>div &#123;<br/>  text-align: justify;<br/>&#125;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Text Direction</h4>
+                    <br>
+                    The direction and unicode-bidi properties can be used to change the text direction of an element.
+                    <br>
+                    <br>
+                    <h4>Vertical Alignment</h4>
+                    <br>
+                    The vertical-align property sets the vertical alignment of an element.
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                p &#123;<br/>  direction: rtl;<br/>  unicode-bidi: bidi-override;<br/>&#125;<br/>img.top &#123;<br/>  vertical-align: top;<br/>&#125;<br/><br/>img.middle &#123;<br/>  vertical-align: middle;<br/>&#125;<br/><br/>img.bottom &#123;<br/>  vertical-align: bottom;<br/>&#125;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Text Decoration</h4>
+                    <br>
+                    The text-decoration property is used to set or remove decorations from text.
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                a &#123;<br/>  text-decoration: none;<br/>&#125;<br/>h1 &#123;<br/>  text-decoration: overline;<br/>&#125;<br/><br/>h2 &#123;<br/>  text-decoration: line-through;<br/>&#125;<br/><br/>h3 &#123;<br/>  text-decoration: underline;<br/>&#125;
+
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    
+
+
+
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/outline']" type="button" class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/fonts']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        
+        </div>
+    </section>
+
+
+
+
+
+    
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

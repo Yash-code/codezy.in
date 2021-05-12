@@ -1,0 +1,149 @@
+<app-home-header></app-home-header>
+<app-html-sidenav></app-html-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HTML File Paths</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    A file path describes the location of a file in a web site's folder structure.
+                    <br>
+                    
+                    <br>
+                    <h4>File Path Examples</h4>
+                    <table>
+                        <tbody><tr><th style="width:auto;">Path</th><th>Description</th></tr>
+                        <tr>
+                        <td>&lt;img src="picture.jpg"&gt;</td>
+                        <td>The "picture.jpg" file is located in the same folder as the current page</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;img src="images/picture.jpg"&gt;</td>
+                        <td>The "picture.jpg" file is located in the images folder in the current folder</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;img src="/images/picture.jpg"&gt;</td>
+                        <td>The "picture.jpg" file is located in the images folder at the root of the current web</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;img src="../picture.jpg"&gt;</td>
+                        <td>The "picture.jpg" file is located in the folder one level up from the current folder</td>
+                        </tr>
+                        </tbody></table>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;style&gt;<br/>#myHeader &#123;<br/>  background-color: lightblue;<br/>  color: black;<br/>  padding: 40px;<br/>  text-align: center;<br/>&#125;<br/>&lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1 id=&quot;myHeader&quot;&gt;My Header&lt;/h1&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+                            </code>
+                        </div>
+                    </div>
+                    <h4>HTML File Paths</h4>
+                    <br>
+                    A file path describes the location of a file in a web site's folder structure.
+                    <br>
+                    File paths are used when linking to external files, like:
+                    <ul>
+                        <li>Web pages</li>
+                        <li>Images</li>
+                        <li>Style sheets</li>
+                        <li>JavaScripts</li>
+                    </ul>
+                    <h4>Absolute File Paths</h4>
+                    <br>
+                    An absolute file path is the full URL to a file:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;img src=&quot;---&quot; alt=&quot;Mountain&quot;&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <h4>Relative File Paths</h4>
+                    <ul>
+                        <li>A relative file path points to a file relative to the current page.</li>
+                        <li>In the following example, the file path points to a file in the images folder located at the root of the current web:</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;img src=&quot;/images/picture.jpg&quot; alt=&quot;Mountain&quot;&gt;
+                            </code>
+                        </div>
+                    </div>
+                    In the following example, the file path points to a file in the images folder located in the current folder:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;img src=&quot;images/picture.jpg&quot; alt=&quot;Mountain&quot;&gt;
+                            </code>
+                        </div>
+                    </div>
+                    In the following example, the file path points to a file in the images folder located in the folder one level up from the current folder:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;img src=&quot;../images/picture.jpg&quot; alt=&quot;Mountain&quot;&gt;
+                            </code>
+                        </div>
+                    </div>                       
+                    
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/html-javascript']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/html-head']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

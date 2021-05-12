@@ -1,0 +1,136 @@
+<app-home-header></app-home-header>
+<app-html-sidenav></app-html-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HTML JavaScript</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <p>JavaScript makes HTML pages more dynamic and interactive.</p>
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1&gt;My First JavaScript&lt;/h1&gt;<br/><br/>&lt;button type=&quot;button&quot;<br/>onclick=&quot;document.getElementById('demo').innerHTML = Date()&quot;&gt;<br/>Click me to display Date and Time.&lt;/button&gt;<br/><br/>&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt; <br/>
+
+                                <br/>
+                            </code>
+
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <h4>The HTML &lt;script&gt; Tag</h4>
+                    <br>
+                    The HTML &lt;script&gt; tag is used to define a client-side script (JavaScript).
+                    <br>
+                    The &lt;script&gt; element either contains script statements, or it points to an
+                    external script file through the &lt;src&gt; attribute.
+                    <br>
+                    Common uses for JavaScript are image manipulation, form validation, and dynamic changes
+                    of content.
+                    <br>
+                    To select an HTML element, JavaScript most often uses the document.getElementById()
+                    method.
+                    <br>
+                    This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo":
+                    <br>
+                    <br>
+
+
+
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                    &lt;script&gt;<br/>document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello JavaScript!&quot;;<br/>&lt;/script&gt;
+
+                                <br/>
+                                </code>
+                        </div>
+                    </div>
+
+                    <h4>A Taste of JavaScript</h4>
+                    <br>
+                    Here are some examples of what JavaScript can do:
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                    document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello JavaScript!&quot;;<br/>
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+
+
+
+                    <h4>The HTML &lt;noscript&gt; Tag</h4>
+                    <br>
+                    The HTML &lt;noscript&gt; tag defines an alternate content to be displayed to users that
+                    have disabled scripts in their browser or have a browser that doesn't support scripts:
+
+
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                    &lt;script&gt;<br/>document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello JavaScript!&quot;;<br/>&lt;/script&gt;<br/>&lt;noscript&gt;Sorry, your browser does not support JavaScript!&lt;/noscript&gt;
+                                <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/html-id']" type="button" class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/html-filepaths']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        
+        </div>
+    </section>
+
+
+
+
+    
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>

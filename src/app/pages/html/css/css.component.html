@@ -1,0 +1,307 @@
+<app-home-header></app-home-header>
+<app-html-sidenav></app-html-sidenav>
+<div class="content-wrapper text-break">
+    <!-- Content Header (Page header) -->
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HTML CSS</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    CSS stands for Cascading Style Sheets.
+                    <br>
+
+                    CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+
+                    <br><br>
+                    <h4>What is CSS?</h4>
+                    <br>
+                    Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+                    <br>
+                    With CSS, you can control the color, font, the size of text, the spacing between elements,
+                    how elements are positioned and laid out, what background images or background colors to be
+                    used, different displays for different devices and screen sizes, and much more!
+                    <br><br>
+                    <h4>Using CSS</h4>
+                    <br>
+                    CSS can be added to HTML documents in 3 ways:
+                    <br>
+                    <ul>
+                        <li>Inline - by using the style attribute inside HTML elements</li>
+                        <li>Internal - by using a &lt;style%gt; element in the &lt;head&gt; section</li>
+                        <li>External - by using a &lt;link&gt; element to link to an external CSS file</li>
+                    </ul>
+                    The most common way to add CSS, is to keep the styles in external CSS files. However, in
+                    this tutorial we will use inline and internal styles, because this is easier to demonstrate,
+                    and easier for you to try it yourself.
+                    <br><br>
+                    <br>
+                    <h4>Inline CSS</h4>
+                    <br>
+                    An inline CSS is used to apply a unique style to a single HTML element.
+                    <br>
+                    An inline CSS uses the style attribute of an HTML element.
+                    <br>
+                    The following example sets the text color of the &lt;h1&gt; element to blue, and the text
+                    color of the &lt;p&gt; element to red:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                    &lt;h1 style=&quot;color:blue;&quot;&gt;A Blue Heading&lt;/h1&gt;<br/><br/>&lt;p style=&quot;color:red;&quot;&gt;A red paragraph.&lt;/p&gt;<br/>
+                            </code>
+                        </div>
+                    </div>
+                    <h4>Internal CSS</h4>
+                    <br>
+                    An internal CSS is used to define a style for a single HTML page.
+                    <br>
+                    An internal CSS is defined in the &lt;head&gt; section of an HTML page, within a
+                    &lt;style&gt; element.
+                    <br>
+                    The following example sets the text color of ALL the &lt;h1&gt; elements (on that page) to
+                    blue, and the text color of ALL the &lt;p&gt;elements to red. In addition, the page will be
+                    displayed with a "powderblue"background color:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                &lt;!DOCTYPE html&gt;
+                                <br/>&lt;html&gt;
+                                <br/>&lt;head&gt;
+                                <br/>&lt;style&gt;
+                                <br/>body&#123;<br>
+                                background-color&#58;powderblue&#59;<br>
+                                &#125;<br>
+                                h1&#123;<br>
+                                color&#58;blue&#59;<br>
+                                &#125;<br>
+                                p&#123;<br>
+                                color&#58;red&#59;<br>
+                                &#125;<br>
+                                <br/>&lt;/style&gt;
+                                <br/>&lt;/head&gt;
+                                <br/>&lt;body&gt;
+                                <br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;
+                                <br/>&lt;p&gt; This is a paragraph.&lt;/p&gt;
+                                <br/><br/>&lt;/body&gt;
+                                <br/>&lt;/html&gt;
+                                <br/>
+                                
+                            </code>
+                        </div>
+                    </div>
+
+                    <h4>External CSS</h4>
+                    <br>An external style sheet is used to define the style for many HTML pages.
+                    <br>To use an external style sheet, add a link to it in the &lt;head&gt;section of each HTML
+                    page:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                    &lt;!DOCTYPE html&gt;
+                                    <br/>&lt;html&gt;
+                                    <br/>&lt;head&gt;
+                                    <br/>&lt;link rel=&quot;stylesheet&quot;href=&quot;styles.css&quot;&gt;
+                                    <br/>&lt;/head&gt;
+                                    <br/>&lt;body&gt;
+                                    <br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;
+                                    <br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+                                    <br/><br/>&lt;/body&gt;
+                                    <br/>&lt;/html&gt;
+                                    <br/>
+                                </code>
+                        </div>
+                    </div>
+                    <br>
+                    The external style sheet can be written in any text editor. The file must not contain any
+                    HTML code,and must be saved with a .css extension.
+                    <br>
+                    Here is how the "styles.css"file looks like:
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                            body &#123;
+                                        <br/>background-color: powderblue;
+                                        <br/>
+                                             &#125;
+
+                                        <br/>h1 &#123;
+                                        <br/>color: blue;
+                                        <br/>
+                                        &#125;
+
+                                        <br/>p &#123;
+                                        <br/>color: red;
+                                        <br/>
+                                        &#125;
+
+                                    <br/><br>
+                                </code>
+                        </div>
+                    </div>
+                    <h4>CSS Colors,Fonts and Sizes</h4>
+                    <br>Here,
+                    we will demonstrate some commonly used CSS properties. You will learn more about them later.
+                    <ul>
+                        <li>The CSS color property defines the text color to be used. </li>
+                        <li>The CSS font-family property defines the font to be used. </li>
+                        <li>The CSS font-size property defines the text size to be used. </li>
+                    </ul>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                        &lt;!DOCTYPE html&gt;
+                                        <br/>
+                                        &lt;html&gt;
+                                        <br/>
+                                        &lt;head&gt;
+                                        <br/>&lt;style&gt;
+                                        <br/>h1 &#123;
+                                        <br/>color: blue;
+                                        <br/>font-family: verdana;
+                                        <br/>font-size: 300%;
+                                        <br/>
+                                                &#125;
+
+                                        <br/>p &#123;
+                                        <br/>color: red;
+                                        <br/>font-family: courier;
+                                        <br/>font-size: 160%;
+                                        <br/>
+                                                &#125;
+
+                                        <br/>&lt;/style&gt;
+                                        <br/>&lt;/head&gt;
+                                        <br/>&lt;body&gt;
+                                        <br/><br/>&lt;h1&gt;
+                                        This is a heading&lt;/h1&gt;
+                                        <br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+                                        <br/><br/>&lt;/body&gt;
+                                        <br/>&lt;/html&gt;
+
+                                    <br/>
+                                </code>
+                        </div>
+                    </div>
+                    <br>
+                    <H4>CSS Border</H4>
+                    <br>The CSS border property defines a border around an HTML element.
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                        p &#123;
+                                        <br/>border: 2px solid powderblue;
+                                        <br/>
+                                        &#125;
+
+                                    <br/><br>
+                                    </code>
+                        </div>
+                    </div>
+                    <H4>CSS Padding</H4>
+                    <br>
+                    The CSS padding property defines a padding (space) between thetext and the border.
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>
+                                        p &#123;
+                                        <br/>border: 2px solid powderblue;
+                                        <br/>padding: 30px;
+                                        <br/>
+                                            &#125;
+
+                                    <br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <h4>CSS Margin</h4> <br>
+                    The CSS margin property defines a margin (space) outside the border. <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>p &#123;
+                                        <br/>border: 2px solid powderblue;
+                                        <br/>margin: 50px;
+                                        <br/>
+                                            &#125;
+
+                                    <br/>
+                                </code>
+                        </div>
+                    </div>
+                    <br>
+                    <H4>Link to External CSS</H4>
+                    <br>
+                    External style sheets can be referenced with a full URL or with a path relative to the current web
+                    page.
+                    <br>
+                    <div class="card-body">
+                        <div class="callout callout-success rounded-0">
+                            <code>&lt;link rel=&quot;stylesheet&quot;href=&quot;
+                            -----&quot;&gt;<br/><br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;----&quot;&gt;<br/><br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;----&quot;&gt;<br/>
+                            </code>
+                        </div>
+                    </div>
+                    <br>
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 text-left">
+                    <a [routerLink]="['/html-formatting']" type="button"
+                        class="btn btn-success btn-flat btn-lg text-white">Previous</a>
+                </div>
+                <div class="col-4">
+        
+                </div>
+                <div class="col-3 text-right">
+                    <a [routerLink]="['/html-links']" type="button" class="btn btn-success btn-flat btn-lg text-white">Next</a>
+                </div>
+        
+            </div>
+            <br />
+        </div>
+    </section>
+
+
+
+    
+
+
+
+
+    <!-- /.content -->
+
+
+
+
+</div>
+<app-home-footer></app-home-footer>
